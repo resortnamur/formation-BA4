@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation BA4 — Habilitation Électrique</title>
+<style>
+:root{--blue:#1565C0;--bl:#1976D2;--bp:#E3F2FD;--or:#E65100;--ol:#FF8F00;--gr:#2E7D32;--gl:#43A047;--rd:#C62828;--gy:#546E7A;--sh:0 2px 12px rgba(0,0,0,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#F5F7FA;color:#263238;min-height:100vh}
+#hdr{background:linear-gradient(135deg,var(--blue) 0%,#0D47A1 100%);color:#fff;padding:15px 26px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(0,0,0,.2);position:sticky;top:0;z-index:100}
+#hdr .bolt{font-size:1.8rem}
+#hdr h1{font-size:1.1rem;font-weight:700}
+#hdr p{font-size:.75rem;opacity:.85}
+#pbw{flex:1;margin-left:18px}
+#pl{font-size:.72rem;opacity:.8;margin-bottom:3px}
+#pb{height:8px;background:rgba(255,255,255,.25);border-radius:4px;overflow:hidden}
+#pf{height:100%;background:#FFC107;border-radius:4px;transition:width .4s;width:0%}
+#app{max-width:900px;margin:0 auto;padding:22px 14px 80px}
+.sc{display:none}.sc.active{display:block}
+/* welcome */
+#sw{text-align:center;padding:34px 16px}
+#sw .bb{font-size:4.5rem}
+#sw h2{font-size:1.85rem;color:var(--blue);margin:12px 0 8px}
+#sw>p{font-size:.98rem;color:var(--gy);max-width:600px;margin:0 auto 20px;line-height:1.7}
+.toc{background:#fff;border-radius:12px;padding:20px 24px;box-shadow:var(--sh);text-align:left;max-width:640px;margin:0 auto 26px}
+.toc h3{color:var(--blue);margin-bottom:12px;font-size:.95rem}
+.ti{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #eee;font-size:.89rem}
+.ti:last-child{border-bottom:none}
+.tn{background:var(--blue);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:.74rem;font-weight:700;flex-shrink:0}
+.wb{background:#FFF8E1;border-left:4px solid #FFA000;border-radius:8px;padding:12px 16px;max-width:640px;margin:0 auto 24px;font-size:.87rem;text-align:left;line-height:1.6}
+/* pages */
+.pg{display:none}.pg.active{display:block}
+.pnav{display:flex;justify-content:space-between;align-items:center;margin:16px 0 4px;gap:10px}
+.dots{display:flex;gap:6px}
+.dot{width:10px;height:10px;border-radius:50%;background:#CFD8DC;border:none;cursor:pointer;padding:0;transition:background .2s}
+.dot.active{background:var(--blue)}
+.bpg{background:#fff;border:2px solid var(--blue);color:var(--blue);border-radius:20px;padding:6px 16px;font-size:.84rem;font-weight:600;cursor:pointer;transition:all .2s}
+.bpg:hover{background:var(--blue);color:#fff}
+.bpg:disabled{border-color:#CFD8DC;color:#B0BEC5;cursor:not-allowed}
+/* section */
+.sh{background:linear-gradient(135deg,var(--blue) 0%,#0D47A1 100%);color:#fff;border-radius:14px 14px 0 0;padding:17px 24px;display:flex;align-items:center;gap:12px}
+.cn{background:rgba(255,255,255,.2);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;flex-shrink:0}
+.sh h2{font-size:1.1rem;font-weight:700}
+.sh .sub{font-size:.78rem;opacity:.8;margin-top:2px}
+.cb{background:#fff;border-radius:0 0 14px 14px;padding:24px;box-shadow:var(--sh);margin-bottom:20px}
+.cb h3{color:var(--blue);margin:20px 0 9px;font-size:1rem;padding-bottom:3px;border-bottom:2px solid var(--bp)}
+.cb h3:first-child{margin-top:0}
+.cb h4{color:#37474F;margin:13px 0 6px;font-size:.93rem}
+.cb p{line-height:1.8;margin-bottom:11px;color:#37474F;font-size:.92rem}
+.cb ul,.cb ol{margin:7px 0 13px 20px}
+.cb li{line-height:1.75;margin-bottom:5px;color:#37474F;font-size:.91rem}
+.cb strong{color:#263238}
+.rb{display:inline-flex;align-items:center;gap:6px;background:var(--bp);color:var(--blue);border-radius:20px;padding:5px 13px;font-size:.79rem;font-weight:600;margin-bottom:16px}
+/* boxes */
+.ib{background:var(--bp);border-left:4px solid var(--blue);border-radius:8px;padding:12px 16px;margin:13px 0;font-size:.89rem;line-height:1.7}
+.wi{background:#FFF3E0;border-left:4px solid var(--or);border-radius:8px;padding:12px 16px;margin:13px 0;font-size:.89rem;line-height:1.7}
+.db{background:#FFEBEE;border-left:4px solid var(--rd);border-radius:8px;padding:12px 16px;margin:13px 0;font-size:.89rem;line-height:1.7}
+.sb{background:#E8F5E9;border-left:4px solid var(--gr);border-radius:8px;padding:12px 16px;margin:13px 0;font-size:.89rem;line-height:1.7}
+.eb{background:#F3E5F5;border-left:4px solid #7B1FA2;border-radius:8px;padding:12px 16px;margin:13px 0;font-size:.89rem;line-height:1.7}
+/* pictos */
+.pr{display:flex;flex-wrap:wrap;gap:13px;margin:14px 0}
+.pc{flex:1;min-width:125px;background:var(--gy-light,#ECEFF1);border-radius:10px;padding:14px 11px;text-align:center;font-size:.81rem;color:#37474F}
+.pc .ic{font-size:1.9rem;display:block;margin-bottom:7px}
+.pc strong{display:block;color:var(--blue);margin-bottom:4px;font-size:.84rem}
+/* table */
+.dt{width:100%;border-collapse:collapse;margin:13px 0;font-size:.85rem}
+.dt th{background:var(--blue);color:#fff;padding:8px 10px;text-align:left}
+.dt td{padding:8px 10px;border-bottom:1px solid #E0E0E0;vertical-align:top}
+.dt tr:nth-child(even) td{background:#F5F7FA}
+.dt tr.hl td{background:#FFF9C4;font-weight:600}
+/* steps */
+.steps{margin:13px 0}
+.step{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px dashed #E0E0E0}
+.step:last-child{border-bottom:none}
+.sn{background:var(--blue);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;margin-top:2px}
+.sc2{font-size:.89rem;line-height:1.65}
+.sc2 strong{display:block;color:var(--blue);margin-bottom:3px}
+/* formula */
+.fm{background:#263238;color:#FFC107;border-radius:10px;padding:13px 20px;font-family:'Courier New',monospace;font-size:1.3rem;font-weight:700;text-align:center;margin:13px 0;letter-spacing:2px}
+/* unlock */
+.buw{text-align:center;margin:24px 0 6px}
+.bu{background:linear-gradient(135deg,var(--or) 0%,var(--ol) 100%);color:#fff;border:none;border-radius:30px;padding:12px 32px;font-size:.95rem;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(230,81,0,.35);transition:transform .15s}
+.bu:hover{transform:translateY(-2px)}
+/* quiz */
+.qw{background:#fff;border-radius:14px;padding:20px 24px;box-shadow:var(--sh);margin-bottom:20px}
+.qw h3{color:var(--blue);margin-bottom:14px;display:flex;align-items:center;gap:9px;font-size:.98rem}
+.qb{background:var(--blue);color:#fff;border-radius:6px;padding:2px 9px;font-size:.74rem}
+.qq{font-size:.96rem;font-weight:600;color:#263238;margin-bottom:15px;line-height:1.55}
+.opts{display:flex;flex-direction:column;gap:9px}
+.ob{background:#F5F7FA;border:2px solid #CFD8DC;border-radius:10px;padding:11px 15px;text-align:left;cursor:pointer;font-size:.89rem;color:#37474F;transition:all .2s;line-height:1.5}
+.ob:hover:not(:disabled){border-color:var(--blue);background:var(--bp);color:var(--blue)}
+.ob.correct{background:#E8F5E9;border-color:var(--gr);color:var(--gr);font-weight:600}
+.ob.wrong{background:#FFEBEE;border-color:var(--rd);color:var(--rd)}
+.ob:disabled{cursor:not-allowed}
+.fb{margin-top:13px;padding:12px 16px;border-radius:10px;font-size:.89rem;line-height:1.65;display:none}
+.fb.correct{background:#E8F5E9;border-left:4px solid var(--gr);color:var(--gr);display:block}
+.fb.wrong{background:#FFEBEE;border-left:4px solid var(--rd);color:var(--rd);display:block}
+.bn{background:linear-gradient(135deg,var(--gr) 0%,var(--gl) 100%);color:#fff;border:none;border-radius:30px;padding:11px 30px;font-size:.91rem;font-weight:700;cursor:pointer;margin-top:15px;display:none;box-shadow:0 4px 14px rgba(46,125,50,.35);transition:transform .15s}
+.bn:hover{transform:translateY(-2px)}.bn.vis{display:inline-block}
+.br2{background:linear-gradient(135deg,#EF6C00 0%,#FFA726 100%);color:#fff;border:none;border-radius:30px;padding:11px 30px;font-size:.91rem;font-weight:700;cursor:pointer;margin-top:15px;display:none;box-shadow:0 4px 14px rgba(239,108,0,.35);transition:transform .15s}
+.br2:hover{transform:translateY(-2px)}.br2.vis{display:inline-block}
+/* svg */
+.svgw{margin:14px 0;text-align:center}
+.svgw svg{max-width:100%;height:auto}
+.svgc{font-size:.77rem;color:var(--gy);margin-top:4px;font-style:italic}
+/* attestation */
+#sa{display:none}#sa.active{display:block}
+.aw{background:#fff;border:3px solid var(--blue);border-radius:16px;padding:30px 34px;box-shadow:0 4px 24px rgba(21,101,192,.15);max-width:680px;margin:0 auto}
+.ah{text-align:center;margin-bottom:20px}
+.ah .bi{font-size:2.8rem}
+.ah h2{color:var(--blue);font-size:1.3rem;margin:6px 0 2px}
+.ah p{font-size:.84rem;color:var(--gy)}
+.ar{border:none;border-top:2px solid var(--bp);margin:16px 0}
+.af{margin-bottom:12px}
+.af label{display:block;font-size:.77rem;color:var(--gy);margin-bottom:3px;font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.af input{width:100%;padding:8px 12px;border:2px solid #CFD8DC;border-radius:8px;font-size:.92rem;color:#263238;transition:border-color .2s}
+.af input:focus{outline:none;border-color:var(--blue)}
+.ac{font-size:.87rem;line-height:1.75;color:#37474F}
+.ci,.ii{display:flex;align-items:flex-start;gap:7px;padding:5px 0;font-size:.85rem}
+.ci .ck{color:var(--gr);flex-shrink:0}
+.ii .cx{color:var(--rd);flex-shrink:0}
+.sff{border:2px dashed #90A4AE;border-radius:10px;padding:14px;text-align:center}
+.sff p{font-size:.82rem;color:var(--gy);margin-bottom:6px}
+.sl{border-bottom:1px solid #263238;height:50px;margin:6px auto;max-width:380px}
+.sh2{font-size:.74rem;color:#90A4AE;margin-top:4px}
+.bpr{background:linear-gradient(135deg,var(--blue) 0%,var(--bl) 100%);color:#fff;border:none;border-radius:30px;padding:12px 36px;font-size:.95rem;font-weight:700;cursor:pointer;display:block;margin:20px auto 0;box-shadow:0 4px 14px rgba(21,101,192,.35);transition:transform .15s}
+.bpr:hover{transform:translateY(-2px)}
+.bpr:disabled{background:#B0BEC5;box-shadow:none;cursor:not-allowed;transform:none}
+.bst{background:linear-gradient(135deg,var(--blue) 0%,var(--bl) 100%);color:#fff;border:none;border-radius:30px;padding:13px 40px;font-size:.98rem;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(21,101,192,.35);transition:transform .15s;margin-top:8px}
+.bst:hover{transform:translateY(-2px)}
+@media print{#hdr,.bpr,.bpg,.pnav,.buw,.bst,#sw,.af{display:none!important}body{background:#fff}.aw{border:2px solid #1565C0;box-shadow:none;padding:18px}#app{padding:0}}
+@media(max-width:600px){.pr{flex-direction:column}.aw{padding:18px 14px}#hdr{flex-wrap:wrap}#pbw{flex-basis:100%;margin-left:0;margin-top:6px}}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <span class="bolt">⚡</span>
+  <div><h1>Formation BA4 — Habilitation Électrique</h1><p>A.R. 10 mars 1981 — RGIE Livres 1, 2 &amp; 3 — Code du Bien-Être au travail</p></div>
+  <div id="pbw"><div id="pl">Progression : 0 / 20 sections</div><div id="pb"><div id="pf"></div></div></div>
+</div>
+<div id="app">
+
+<!-- WELCOME -->
+<div id="sw" class="sc active">
+<div class="bb">⚡</div>
+<h2>Formation à l'Habilitation Électrique BA4</h2>
+<p>Cette formation vous prépare à la qualification <strong>BA4 — Personne Avertie</strong>, conformément au Code du Bien-Être au travail et au RGIE. Lisez chaque section attentivement et répondez correctement à toutes les questions pour obtenir votre attestation.</p>
+<div class="toc"><h3>📋 Programme — 10 chapitres</h3>
+<div class="ti"><span class="tn">1</span> Habilitation — définitions et codification réglementaire</div>
+<div class="ti"><span class="tn">2</span> Notions d'électricité — grandeurs et loi d'Ohm</div>
+<div class="ti"><span class="tn">3</span> Les risques électriques — types de contacts</div>
+<div class="ti"><span class="tn">4</span> Effets de l'électricité sur le corps humain</div>
+<div class="ti"><span class="tn">5</span> Protection contre les contacts directs</div>
+<div class="ti"><span class="tn">6</span> Protection contre les contacts indirects</div>
+<div class="ti"><span class="tn">7</span> Les travaux aux installations électriques</div>
+<div class="ti"><span class="tn">8</span> Consignation — travail hors tension</div>
+<div class="ti"><span class="tn">9</span> Équipements de protection individuelle</div>
+<div class="ti"><span class="tn">10</span> Conduite à tenir en cas d'accident</div>
+</div>
+<div class="wb">⚠️ <strong>Important :</strong> Une mauvaise réponse vous renvoie à la section correspondante pour relecture. Vous devez obtenir la bonne réponse avant de continuer.</div>
+<button class="bst" onclick="goTo('s1a')">Commencer la formation →</button>
+</div>
+
+<!-- ===== CH1A ===== -->
+<div id="s1a" class="sc">
+<div class="sh"><div class="cn">1</div><div><h2>Habilitation des personnes</h2><div class="sub">Partie 1/2 — Définitions et codification réglementaire</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-1a-1">
+<h3>Qu'est-ce que l'habilitation électrique ?</h3>
+<p>L'habilitation électrique est la <strong>reconnaissance formelle et traçable par l'employeur</strong> de la compétence d'un travailleur à exécuter des opérations définies sur ou à proximité d'installations électriques. Elle n'est pas un diplôme : c'est l'employeur qui l'attribue après avoir évalué les connaissances et l'expérience de la personne.</p>
+<p>En Belgique, ce dispositif est encadré par le <strong>Code du Bien-Être au Travail (Livre III, Titre 2, Chapitre VI)</strong> et par l'<strong>Arrêté Royal du 08/09/2019</strong>. Le RGIE (Règlement Général sur les Installations Électriques) fixe les exigences techniques.</p>
+<div class="ib">🔑 <strong>Habilitation = Compétence évaluée + Code BA4/BA5 attribué par l'employeur + Dossier d'habilitation signé des deux parties</strong></div>
+<h4>Pourquoi l'habilitation est-elle obligatoire ?</h4>
+<p>L'employeur a une obligation légale de résultat en matière de sécurité électrique. Il doit s'assurer que seules les personnes compétentes interviennent à proximité ou sur des installations électriques. L'habilitation est la preuve documentée que cette obligation a été respectée. En cas d'accident, l'absence d'habilitation engage directement la responsabilité pénale de l'employeur.</p>
+<div class="eb">💼 <strong>Exemple :</strong> Un technicien de maintenance qui remplace des alimentations de machines, travaille dans des locaux techniques à proximité de tableaux BT, ou intervient dans des zones contenant des équipements sous tension, doit disposer d'une habilitation BA4 minimum — même si son travail est principalement mécanique.</div>
+</div>
+<div class="pg" id="pg-1a-2">
+<h3>Le tableau des codifications (RGIE Livres 1, 2 et 3 — chap. 2.10)</h3>
+<table class="dt"><tr><th>Code</th><th>Compétence</th><th>Conditions</th><th>Exemples</th></tr>
+<tr><td><strong>BA1</strong></td><td>Ordinaires</td><td>Personnes non classifiées ci-après</td><td>Locaux domestiques, bureaux, commerces</td></tr>
+<tr><td><strong>BA2</strong></td><td>Enfants</td><td>Se trouvant dans des locaux qui leur sont destinés</td><td>Crèches, écoles maternelles</td></tr>
+<tr><td><strong>BA3</strong></td><td>Handicapés</td><td>Ne disposant pas de toutes leurs capacités</td><td>Hospices, homes</td></tr>
+<tr class="hl"><td><strong>BA4 ⭐</strong></td><td>Averties</td><td>Informées des risques + surveillées en permanence par une BA5 pendant les travaux</td><td>Agents d'exploitation, agents d'entretien technique</td></tr>
+<tr><td><strong>BA5</strong></td><td>Qualifiées</td><td>Connaissances approfondies — autonomes — peuvent habiliter d'autres</td><td>Ingénieurs, techniciens électriciens</td></tr>
+</table>
+<div class="wi">👷 <strong>Confusion fréquente :</strong> la BA4 est une personne AVERTIE (informée des risques) mais <em>pas qualifiée</em> pour travailler seule. Elle <strong>doit toujours être surveillée par un BA5</strong> pendant les travaux relevant du risque électrique.</div>
+<h4>Ce que signifie "suffisamment informée" pour une BA4</h4>
+<ul>
+<li>Elle connaît les dangers liés à l'électricité dans son environnement de travail</li>
+<li>Elle sait identifier les zones dangereuses et les équipements sous tension</li>
+<li>Elle connaît les mesures de protection à respecter et les EPI à utiliser</li>
+<li>Elle sait comment réagir en cas de danger ou d'accident électrique</li>
+</ul>
+</div>
+<div class="pg" id="pg-1a-3">
+<h3>Compétences évaluées pour l'habilitation BA4</h3>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Connaissance des risques électriques</strong>Comprendre les dangers : électrisation, électrocution, brûlures par arc, incendie. Acquis par formation (comme cette formation BA4) ou par expérience professionnelle documentée.</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Connaissance des installations du site</strong>Comprendre le type et la diversité des installations présentes : BT (230/400V), armoires de distribution, tableaux, câbles… et savoir localiser les organes de coupure.</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>Connaissance du type d'interventions</strong>Savoir identifier ce qui est ou n'est pas dans le périmètre BA4. Connaitre la limite entre travaux autorisés (à proximité, sous surveillance) et travaux réservés aux BA5.</div></div>
+</div>
+<div class="ib">📋 <strong>Traçabilité obligatoire :</strong> L'appréciation de la compétence, les installations concernées et les types de travaux autorisés doivent être documentés dans un dossier signé par l'employeur et le travailleur. Ce dossier est réexaminé périodiquement.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q1a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-1a">
+<button class="bpg" id="prev-1a" onclick="chPg('1a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-1a"></div>
+<button class="bpg" id="next-1a" onclick="chPg('1a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q1a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 1 — Question 1/2</h3>
+<div class="qq">Qu'est-ce qui distingue fondamentalement une personne BA4 d'une personne BA5 selon la réglementation belge ?</div>
+<div class="opts" id="o1a"></div>
+<div id="f1a" class="fb"></div>
+<button class="bn" id="n1a" onclick="goTo('s1b')">Continuer →</button>
+<button class="br2" id="r1a" onclick="goTo('s1a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH1B ===== -->
+<div id="s1b" class="sc">
+<div class="sh"><div class="cn">1</div><div><h2>Habilitation des personnes</h2><div class="sub">Partie 2/2 — Dossier d'habilitation et obligations légales</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-1b-1">
+<h3>Le dossier d'habilitation BA4 — contenu obligatoire</h3>
+<p>L'habilitation n'est pas uniquement verbale. Elle doit être formalisée dans un <strong>document écrit et signé</strong> par l'employeur (ou son délégué) ET par le travailleur.</p>
+<div class="ib">📄 <strong>Le dossier d'habilitation doit contenir :</strong><br>
+• <strong>Nom et prénom</strong> du travailleur<br>
+• <strong>Code attribué</strong> : BA4 ou BA5<br>
+• <strong>Installations concernées</strong> : description précise (ex. : "tableaux BT du site X", "locaux techniques bâtiment Y")<br>
+• <strong>Type d'interventions autorisées</strong> (ex. : travaux non électriques à proximité, réarmement de disjoncteurs différentiels…)<br>
+• <strong>Durée de validité</strong> : à réévaluer périodiquement (en général tous les 3 ans) ou après tout accident ou changement d'installation</div>
+<h4>Importance de la précision du dossier</h4>
+<p>Un dossier trop vague ("autorisé sur toutes les installations") n'a pas de valeur légale suffisante. L'employeur doit être précis : cela protège le travailleur (il sait exactement ce qu'il peut faire) et l'employeur (sa responsabilité est clairement définie et documentée).</p>
+</div>
+<div class="pg" id="pg-1b-2">
+<h3>Obligations de l'employeur — analyse des risques</h3>
+<p>Avant d'attribuer toute habilitation, l'employeur doit réaliser une <strong>analyse des risques électriques</strong> portant sur au minimum 11 points définis par le Code du Bien-Être :</p>
+<ul>
+<li>Identification des travaux nécessitant une habilitation</li>
+<li>Nature et caractéristiques des installations électriques concernées</li>
+<li>Évaluation des dangers présents (tension, accessibilité, environnement)</li>
+<li>Mesures de prévention collective à mettre en place</li>
+<li>EPI à fournir, contrôler et remplacer</li>
+<li>Procédures de travail à établir et communiquer au personnel</li>
+</ul>
+<div class="wi">⚠️ <strong>Renouvellement obligatoire</strong> en cas de : modification significative des installations, accident électrique, changement de poste ou de site, retour après longue absence, ou à l'échéance de validité définie dans le dossier.</div>
+<h3>Les 3 catégories de lieux de travail électrique</h3>
+<table class="dt"><tr><th>Catégorie</th><th>Définition</th><th>Accès BA4</th></tr>
+<tr><td>🏠 Lieu ordinaire</td><td>Non exclusivement électrique, accessible au public ou personnel général</td><td>Oui, sous surveillance</td></tr>
+<tr><td>⚡ Lieu du service électrique</td><td>Local clôturé servant essentiellement à l'exploitation électrique (TGBT, sous-station…)</td><td>Avec accompagnement BA5</td></tr>
+<tr><td>🔒 Lieu exclusif</td><td>Local fermé à clé, accès interdit aux non-autorisés (cabine HT, poste de transformation)</td><td>Sur autorisation explicite CIE uniquement</td></tr>
+</table>
+</div>
+<div class="pg" id="pg-1b-3">
+<h3>Autorisations et interdictions BA4 — synthèse pratique</h3>
+<div class="sb">✅ <strong>Un BA4 peut :</strong><br>
+• Travailler à proximité d'installations électriques sous surveillance permanente d'un BA5<br>
+• Effectuer les manœuvres simples spécifiées dans son dossier (ex. : réarmer un DDR sur instruction)<br>
+• Signaler et documenter les anomalies électriques observées<br>
+• Utiliser les EPI et outillage isolé mis à disposition<br>
+• Entrer dans les locaux électriques accompagné d'un BA5 avec son autorisation</div>
+<div class="db">🚫 <strong>Un BA4 ne peut jamais :</strong><br>
+• Travailler seul sur une installation électrique sans surveillance BA5<br>
+• Ouvrir les enveloppes de protection des parties actives sous tension<br>
+• Effectuer des travaux sous tension (strictement réservé BA5 formé)<br>
+• Prendre des décisions de sécurité électrique de sa propre initiative<br>
+• Déléguer sa surveillance à une autre BA4</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q1b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-1b">
+<button class="bpg" id="prev-1b" onclick="chPg('1b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-1b"></div>
+<button class="bpg" id="next-1b" onclick="chPg('1b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q1b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 1 — Question 2/2</h3>
+<div class="qq">Parmi les éléments suivants, lequel doit OBLIGATOIREMENT figurer dans le dossier d'habilitation BA4 ?</div>
+<div class="opts" id="o1b"></div>
+<div id="f1b" class="fb"></div>
+<button class="bn" id="n1b" onclick="goTo('s2a')">Continuer →</button>
+<button class="br2" id="r1b" onclick="goTo('s1b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH2A ===== -->
+<div id="s2a" class="sc">
+<div class="sh"><div class="cn">2</div><div><h2>Notions d'électricité</h2><div class="sub">Partie 1/2 — Grandeurs électriques et loi d'Ohm</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-2a-1">
+<h3>Les 4 grandeurs électriques essentielles</h3>
+<p>Pour comprendre les risques électriques, il faut maîtriser les concepts de base. L'analogie avec l'eau dans une canalisation aide à visualiser ces grandeurs :</p>
+<div class="pr">
+<div class="pc"><span class="ic">💧</span><strong>INTENSITÉ (I)</strong>Quantité de courant. Comme le débit d'eau (L/s). Unité : <strong>Ampère (A)</strong></div>
+<div class="pc"><span class="ic">📏</span><strong>TENSION (U)</strong>Force qui pousse le courant. Comme la pression (hauteur du réservoir). Unité : <strong>Volt (V)</strong></div>
+<div class="pc"><span class="ic">🚧</span><strong>RÉSISTANCE (R)</strong>Opposition au courant. Comme la section de canalisation. Unité : <strong>Ohm (Ω)</strong></div>
+<div class="pc"><span class="ic">⚡</span><strong>PUISSANCE (P)</strong>Énergie par unité de temps. Unité : <strong>Watt (W)</strong></div>
+</div>
+<p>La résistance du corps humain varie de <strong>1 000 Ω</strong> (peau sèche) à <strong>200 Ω</strong> (peau mouillée). Plus elle baisse, plus l'intensité qui traverse le corps est élevée pour une même tension — et donc plus le danger est grand.</p>
+</div>
+<div class="pg" id="pg-2a-2">
+<h3>La Loi d'Ohm — relation fondamentale</h3>
+<p>Les trois grandeurs tension, résistance et intensité sont indissociables. La loi d'Ohm les relie :</p>
+<div class="fm">U = R × I</div>
+<div class="ib">📐 <strong>U = R × I</strong> → calculer la tension (Volts)<br>
+📐 <strong>I = U / R</strong> → calculer l'intensité (Ampères)<br>
+📐 <strong>R = U / I</strong> → calculer la résistance (Ohms)</div>
+<p>La puissance électrique :</p>
+<div class="fm">P = U × I</div>
+<div class="eb">🧮 <strong>Exemples pratiques :</strong><br>
+• Un récepteur de 100 Ω sous 230 V : I = 230/100 = <strong>2,3 A</strong> — P = 230×2,3 = <strong>529 W</strong><br>
+• Corps humain (peau mouillée ≈ 500 Ω) sous 230 V : I = 230/500 = <strong>0,46 A = 460 mA</strong><br>
+⚠️ Le seuil de fibrillation ventriculaire est 75-100 mA. 460 mA représente <strong>6 fois le seuil mortel</strong>.</div>
+</div>
+<div class="pg" id="pg-2a-3">
+<h3>Tableau récapitulatif des grandeurs</h3>
+<table class="dt"><tr><th>Grandeur</th><th>Symbole</th><th>Unité</th><th>Abrév.</th><th>Repères</th></tr>
+<tr><td>Tension</td><td>U</td><td>Volt</td><td>V</td><td>230V réseau, 400V triphasé, 24V sécurité</td></tr>
+<tr><td>Intensité</td><td>I</td><td>Ampère</td><td>A</td><td>mA pour les courants corporels dangereux</td></tr>
+<tr><td>Puissance</td><td>P</td><td>Watt</td><td>W</td><td>kW pour les grosses installations</td></tr>
+<tr><td>Résistance</td><td>R</td><td>Ohm</td><td>Ω</td><td>kΩ pour le corps humain</td></tr>
+<tr><td>Fréquence</td><td>F</td><td>Hertz</td><td>Hz</td><td>50 Hz (réseau européen)</td></tr>
+</table>
+<div class="wi">⚠️ <strong>CA vs CC :</strong> Le courant alternatif 50 Hz est <strong>2 à 4 fois plus dangereux</strong> que le continu à égale intensité. La fréquence de 50 Hz correspond à la fréquence naturelle de fibrillation du cœur humain.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q2a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-2a">
+<button class="bpg" id="prev-2a" onclick="chPg('2a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-2a"></div>
+<button class="bpg" id="next-2a" onclick="chPg('2a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q2a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 2 — Question 1/2</h3>
+<div class="qq">Un appareil électrique présente une résistance de 50 Ω et est alimenté sous 230 V. Quelle est l'intensité du courant qui le traverse ?</div>
+<div class="opts" id="o2a"></div>
+<div id="f2a" class="fb"></div>
+<button class="bn" id="n2a" onclick="goTo('s2b')">Continuer →</button>
+<button class="br2" id="r2a" onclick="goTo('s2a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH2B ===== -->
+<div id="s2b" class="sc">
+<div class="sh"><div class="cn">2</div><div><h2>Notions d'électricité</h2><div class="sub">Partie 2/2 — Domaines de tension et circuit électrique</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-2b-1">
+<h3>Domaines de tension — classification RGIE</h3>
+<p>Le RGIE classe les installations selon leur niveau de tension, car les risques et mesures de protection varient fondamentalement selon ce niveau. En tant que BA4, vous devez savoir identifier à quel domaine appartient une installation.</p>
+<table class="dt"><tr><th>Domaine</th><th>CA (alternatif)</th><th>CC non lissé</th><th>CC lissé</th></tr>
+<tr><td>Très Basse Tension (TBT)</td><td>U ≤ 50 V</td><td>U ≤ 75 V</td><td>U ≤ 120 V</td></tr>
+<tr class="hl"><td><strong>BT 1ère catégorie</strong></td><td><strong>50 &lt; U ≤ 500 V</strong></td><td>75–750 V</td><td>120–750 V</td></tr>
+<tr><td>BT 2ème catégorie</td><td>500–1000 V</td><td>750–1500 V</td><td>750–1500 V</td></tr>
+<tr><td>HT 1ère catégorie</td><td>1000–50 000 V</td><td colspan="2">U &gt; 1500 V</td></tr>
+<tr><td>HT 2ème catégorie</td><td>U &gt; 50 000 V</td><td colspan="2">U &gt; 1500 V</td></tr>
+</table>
+<div class="eb">🏭 <strong>Dans votre environnement :</strong><br>
+• <strong>230 V CA</strong> (prises, éclairage) → BT 1ère catégorie<br>
+• <strong>400 V CA</strong> (moteurs, climatisation, machines) → BT 1ère catégorie<br>
+• <strong>24 V CC</strong> (automates, capteurs, contrôle d'accès) → TBT<br>
+• <strong>10–20 kV</strong> (poste de transformation, alimentation du site) → HT 1ère catégorie</div>
+</div>
+<div class="pg" id="pg-2b-2">
+<h3>Le circuit électrique — principe de fonctionnement</h3>
+<p>Pour que le courant circule, il faut un circuit <strong>fermé et continu</strong>. C'est parce que le corps humain peut fermer un circuit entre une partie active et la terre (ou une autre partie active) que le risque d'électrisation existe.</p>
+<div class="pr">
+<div class="pc"><span class="ic">🔌</span><strong>Alimentation</strong>Transformateur, batterie, réseau</div>
+<div class="pc"><span class="ic">〰️</span><strong>Conducteurs</strong>Fils, câbles, barres qui transportent le courant</div>
+<div class="pc"><span class="ic">💡</span><strong>Récepteur</strong>Charge : moteur, lampe, résistance…</div>
+<div class="pc"><span class="ic">🔘</span><strong>Commande</strong>Disjoncteur, fusible, interrupteur</div>
+</div>
+<div class="db">⚠️ <strong>Le corps humain comme "récepteur" :</strong> Si vous touchez une partie active d'un côté et que vos pieds sont sur un sol conducteur, votre corps ferme le circuit. Le courant circule à travers vous avec les effets physiologiques qui en découlent.</div>
+<h4>Courant alternatif vs continu — différences pratiques</h4>
+<ul>
+<li><strong>CA (50 Hz) :</strong> Change de sens 100 fois/s — contractions musculaires rythmées — risque de "non-lâcher" (tétanisation) plus élevé</li>
+<li><strong>CC :</strong> Sens constant — moins de tétanisation — mais brûlures internes plus profondes à intensité égale</li>
+</ul>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q2b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-2b">
+<button class="bpg" id="prev-2b" onclick="chPg('2b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-2b"></div>
+<button class="bpg" id="next-2b" onclick="chPg('2b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q2b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 2 — Question 2/2</h3>
+<div class="qq">Dans quel domaine de tension se situe une installation alimentée en 400 V triphasé alternatif ?</div>
+<div class="opts" id="o2b"></div>
+<div id="f2b" class="fb"></div>
+<button class="bn" id="n2b" onclick="goTo('s3a')">Continuer →</button>
+<button class="br2" id="r2b" onclick="goTo('s2b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH3A ===== -->
+<div id="s3a" class="sc">
+<div class="sh"><div class="cn">3</div><div><h2>Les risques électriques</h2><div class="sub">Partie 1/2 — Types de risques et contacts directs</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-3a-1">
+<h3>Les 4 risques électriques principaux</h3>
+<div class="pr">
+<div class="pc"><span class="ic">☠️</span><strong>Électrocution</strong>Mort par électrisation. Cause : fibrillation ventriculaire ou brûlures incompatibles avec la vie.</div>
+<div class="pc"><span class="ic">⚡</span><strong>Électrisation</strong>Choc électrique non mortel mais pouvant causer des séquelles graves (brûlures, troubles cardiaques tardifs).</div>
+<div class="pc"><span class="ic">🔥</span><strong>Brûlures / Arc / Incendie</strong>Arcs électriques (jusqu'à 19 000°C), courts-circuits. Peuvent atteindre des tiers non directement impliqués.</div>
+<div class="pc"><span class="ic">📡</span><strong>Champs EM</strong>Effets biologiques. Perturbation d'implants médicaux (pacemakers).</div>
+</div>
+<div class="ib">📌 <strong>Courant de choc</strong> = courant qui traverse le corps humain. C'est l'intensité qui cause les dommages, pas la tension — mais c'est la tension qui "pousse" le courant à travers le corps (loi d'Ohm).</div>
+</div>
+<div class="pg" id="pg-3a-2">
+<h3>Les contacts directs — définition et exemples pratiques</h3>
+<p><strong>Contact direct</strong> = contact physique d'une personne avec les <em>parties actives sous tension</em> du matériel électrique.</p>
+<h4>Exemples dans votre environnement de travail</h4>
+<ul>
+<li>Toucher un fil électrique dénudé suite à une détérioration de la gaine isolante</li>
+<li>Travailler à l'intérieur d'un tableau électrique ouvert avec des parties sous tension accessibles</li>
+<li>Toucher des bornes de connexion non protégées dans un coffret ouvert</li>
+<li>Se rapprocher d'une ligne HT (arc possible sans contact physique)</li>
+<li>Utiliser un outil conducteur qui dérape vers une pièce sous tension</li>
+</ul>
+<div class="db">🚫 <strong>En haute tension, le contact physique n'est pas nécessaire !</strong> Un arc peut amorcer à distance. Des zones de danger sont définies pour cette raison.</div>
+<div class="svgw">
+<svg viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+<rect width="420" height="150" fill="#FAFAFA" rx="8"/>
+<circle cx="200" cy="65" r="22" fill="#FFC107" stroke="#F57F17" stroke-width="2"/>
+<text x="200" y="70" text-anchor="middle" font-size="12" fill="#263238" font-weight="bold">⚡ HT</text>
+<circle cx="200" cy="65" r="55" fill="none" stroke="#EF5350" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="258" y="38" font-size="9" fill="#EF5350" font-weight="bold">Zone sous tension</text>
+<text x="260" y="48" font-size="8" fill="#EF5350">(accès interdit)</text>
+<circle cx="200" cy="65" r="88" fill="none" stroke="#FFA726" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="293" y="82" font-size="9" fill="#FFA726" font-weight="bold">Zone de voisinage</text>
+<text x="292" y="92" font-size="8" fill="#FFA726">(extrême prudence)</text>
+<text x="318" y="118" font-size="22">🧍</text>
+<text x="303" y="138" font-size="8" fill="#2E7D32" font-weight="bold">Zone sûre ✓</text>
+</svg>
+<div class="svgc">Zones d'environnement autour d'une pièce nue sous tension HT</div>
+</div>
+</div>
+<div class="pg" id="pg-3a-3">
+<h3>Reconnaître les situations à risque de contact direct</h3>
+<div class="steps">
+<div class="step"><div class="sn">⚠️</div><div class="sc2"><strong>Câbles endommagés visibles</strong>Gaine abîmée, brûlée, écrasée, rongée. Signaler immédiatement — ne jamais tenter de réparer soi-même.</div></div>
+<div class="step"><div class="sn">⚠️</div><div class="sc2"><strong>Coffrets électriques ouverts ou sans couvercle</strong>Parties actives accessibles. Ne pas s'approcher sans autorisation BA5. Signaler la situation anormale.</div></div>
+<div class="step"><div class="sn">⚠️</div><div class="sc2"><strong>Installations provisoires mal protégées</strong>Prolongateurs, tableaux de chantier, câbles au sol. Risque d'endommagement mécanique et de contact accidentel.</div></div>
+<div class="step"><div class="sn">⚠️</div><div class="sc2"><strong>Travaux à proximité de pièces nues sous tension</strong>Perçage, meulage, manutention près de jeux de barres ou conducteurs non protégés. Éloignement ou consignation obligatoires.</div></div>
+</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q3a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-3a">
+<button class="bpg" id="prev-3a" onclick="chPg('3a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-3a"></div>
+<button class="bpg" id="next-3a" onclick="chPg('3a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q3a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 3 — Question 1/2</h3>
+<div class="qq">Qu'est-ce qu'un contact direct en électricité ?</div>
+<div class="opts" id="o3a"></div>
+<div id="f3a" class="fb"></div>
+<button class="bn" id="n3a" onclick="goTo('s3b')">Continuer →</button>
+<button class="br2" id="r3a" onclick="goTo('s3a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH3B ===== -->
+<div id="s3b" class="sc">
+<div class="sh"><div class="cn">3</div><div><h2>Les risques électriques</h2><div class="sub">Partie 2/2 — Contacts indirects et tension de pas</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-3b-1">
+<h3>Les contacts indirects — mécanisme</h3>
+<p><strong>Contact indirect</strong> = contact avec des masses métalliques (carcasses, châssis) mises <em>accidentellement</em> sous tension suite à un défaut d'isolation interne.</p>
+<div class="eb">💼 <strong>Exemple :</strong> Une machine dont le câble interne est usé entre en contact avec son châssis métallique. Le châssis se retrouve sous 230 V. Un technicien qui le touche d'une main et un radiateur mis à la terre de l'autre reçoit un choc — même si la machine semblait fonctionner normalement.</div>
+<h4>Trajets de courant et dangerosité</h4>
+<div class="pr">
+<div class="pc"><span class="ic">🤲</span><strong>Main → Main</strong>Traverse le thorax et le cœur. Trajet le plus dangereux. Ex. : toucher deux appareils différents simultanément.</div>
+<div class="pc"><span class="ic">🤚</span><strong>Main → Pied</strong>Traverse une partie du tronc. Dangereux si passe par le cœur.</div>
+<div class="pc"><span class="ic">👣</span><strong>Pied → Pied</strong>Tension de pas. Sans contact physique avec l'installation. Dangerosité variable selon l'écartement.</div>
+</div>
+</div>
+<div class="pg" id="pg-3b-2">
+<h3>La tension de pas — un risque souvent méconnu</h3>
+<p>Lors de l'écoulement d'un courant de défaut dans le sol (câble HT tombé à terre, défaut de mise à la terre), une différence de potentiel apparaît entre deux points du sol. Si vos deux pieds se trouvent à des points de potentiels différents, un courant circule de pied en pied — <strong>sans que vous touchiez quoi que ce soit d'autre</strong>.</p>
+<div class="db">⛔ <strong>Conduite à tenir face à un câble tombé à terre :</strong><br>
+• <strong>Ne pas courir</strong> : chaque enjambée augmente la tension de pas<br>
+• <strong>Sauter à pieds joints</strong> hors de la zone, ou<br>
+• Faire de <strong>très petits pas les pieds joints</strong> pour minimiser l'écartement<br>
+• Prévenir immédiatement le CIE et les collègues</div>
+<h4>Facteurs aggravants de la tension de pas</h4>
+<ul>
+<li>Sol conducteur (béton humide, métal, eau)</li>
+<li>Grand écartement des pieds (marche normale, course)</li>
+<li>Proximité du point de défaut (gradient de potentiel plus élevé)</li>
+<li>Intensité élevée du courant de défaut</li>
+</ul>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q3b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-3b">
+<button class="bpg" id="prev-3b" onclick="chPg('3b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-3b"></div>
+<button class="bpg" id="next-3b" onclick="chPg('3b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q3b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 3 — Question 2/2</h3>
+<div class="qq">Qu'est-ce que la tension de pas et quelle est la conduite à tenir correcte face à un câble tombé à terre ?</div>
+<div class="opts" id="o3b"></div>
+<div id="f3b" class="fb"></div>
+<button class="bn" id="n3b" onclick="goTo('s4a')">Continuer →</button>
+<button class="br2" id="r3b" onclick="goTo('s3b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH4A ===== -->
+<div id="s4a" class="sc">
+<div class="sh"><div class="cn">4</div><div><h2>Effets de l'électricité sur le corps</h2><div class="sub">Partie 1/2 — Facteurs déterminants et seuils physiologiques</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-4a-1">
+<h3>Deux catégories d'effets sur le corps humain</h3>
+<div class="pr">
+<div class="pc"><span class="ic">💪</span><strong>Effets excito-moteurs</strong>Contractions musculaires involontaires, tétanisation (impossibilité de lâcher), paralysie respiratoire, fibrillation ventriculaire.</div>
+<div class="pc"><span class="ic">🌡️</span><strong>Effets thermiques</strong>Brûlures internes par effet Joule, brûlures cutanées aux points de contact, brûlures externes par arc électrique (souvent invisibles en surface mais profondes).</div>
+</div>
+<h3>Les 4 facteurs déterminants la gravité</h3>
+<div class="pr">
+<div class="pc"><span class="ic">⚡</span><strong>Intensité (I)</strong>Facteur N°1. Plus I est élevée, plus les effets sont graves.</div>
+<div class="pc"><span class="ic">〰️</span><strong>Nature du courant</strong>CA 50 Hz = plus dangereux que CC (fréquence de fibrillation).</div>
+<div class="pc"><span class="ic">⏱️</span><strong>Durée d'exposition</strong>Plus long = plus grave. D'où les DDR rapides (&lt; 30 ms).</div>
+<div class="pc"><span class="ic">🗺️</span><strong>Trajet dans le corps</strong>Main-main (passe par le cœur) = le plus dangereux.</div>
+</div>
+</div>
+<div class="pg" id="pg-4a-2">
+<h3>Seuils d'intensité et effets physiologiques (CA 50 Hz)</h3>
+<table class="dt"><tr><th>Intensité</th><th>Effet sur le corps</th><th>Risque vital</th></tr>
+<tr><td>0,5 mA</td><td>Seuil de perception — léger picotement</td><td>Nul</td></tr>
+<tr><td>1–10 mA</td><td>Contractions musculaires légères, douleur</td><td>Très faible</td></tr>
+<tr><td>10–30 mA</td><td><strong>Non-lâcher</strong> : tétanisation musculaire — impossible de lâcher</td><td>Faible à modéré</td></tr>
+<tr><td>30–75 mA</td><td>Paralysie respiratoire progressive</td><td>Modéré à élevé</td></tr>
+<tr class="hl"><td><strong>75–100 mA</strong></td><td><strong>Fibrillation ventriculaire</strong> — désorganisation du rythme cardiaque</td><td><strong>Mortel</strong></td></tr>
+<tr><td>100 mA – 5 A</td><td>Arrêt cardiaque possible — brûlures graves</td><td>Mortel</td></tr>
+<tr><td>&gt; 5 A</td><td>Tétanisation cardiaque — arrêt cardiaque — brûlures profondes</td><td>Mortel</td></tr>
+</table>
+<div class="db">❤️ <strong>Fibrillation ventriculaire :</strong> désorganisation chaotique des contractions ventriculaires — le cœur ne pompe plus efficacement. Sans défibrillation rapide, la mort survient en quelques minutes. C'est la cause de <strong>80% des décès par électrisation</strong>.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q4a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-4a">
+<button class="bpg" id="prev-4a" onclick="chPg('4a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-4a"></div>
+<button class="bpg" id="next-4a" onclick="chPg('4a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q4a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 4 — Question 1/2</h3>
+<div class="qq">À partir de quelle intensité de courant alternatif (50 Hz) apparaît le risque de fibrillation ventriculaire mortelle ?</div>
+<div class="opts" id="o4a"></div>
+<div id="f4a" class="fb"></div>
+<button class="bn" id="n4a" onclick="goTo('s4b')">Continuer →</button>
+<button class="br2" id="r4a" onclick="goTo('s4a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH4B ===== -->
+<div id="s4b" class="sc">
+<div class="sh"><div class="cn">4</div><div><h2>Effets de l'électricité sur le corps</h2><div class="sub">Partie 2/2 — Résistance corporelle, arcs et suivi médical</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-4b-1">
+<h3>Résistance du corps humain — influence de l'état de la peau</h3>
+<p>La résistance corporelle varie énormément selon l'état de la peau et les conditions d'environnement. Plus elle baisse, plus le courant qui traverse le corps augmente pour une même tension.</p>
+<table class="dt"><tr><th>Code</th><th>État de la peau</th><th>Résistance approx.</th><th>Tension limite CA</th></tr>
+<tr><td><strong>BB1</strong></td><td>Sèche ou légèrement humide (sueur)</td><td>1 000 – 10 000 Ω</td><td><strong>50 V</strong></td></tr>
+<tr class="hl"><td><strong>BB2</strong></td><td>Mouillée (pluie, lavage, condensation)</td><td>200 – 1 000 Ω</td><td><strong>25 V</strong></td></tr>
+<tr><td><strong>BB3</strong></td><td>Immergée dans l'eau</td><td>100 – 200 Ω</td><td><strong>12 V</strong></td></tr>
+</table>
+<div class="wi">💧 <strong>Conséquence pratique :</strong> Travailler dans un environnement humide (locaux techniques, condensation, extérieur sous la pluie) réduit drastiquement votre protection naturelle. Les EPI isolants deviennent encore plus critiques.</div>
+<div class="eb">🧮 <strong>Calcul — peau mouillée BB2 sous 230 V :</strong><br>
+Résistance ≈ 500 Ω → I = 230/500 = <strong>0,46 A = 460 mA</strong><br>
+Seuil de fibrillation ≈ 75-100 mA → 460 mA représente <strong>6 fois le seuil mortel</strong>.</div>
+</div>
+<div class="pg" id="pg-4b-2">
+<h3>Les arcs électriques — danger thermique extrême</h3>
+<p>Un arc électrique involontaire se produit lors d'un court-circuit ou d'une approche trop proche d'une pièce sous tension HT. Sa température peut atteindre <strong>19 000°C</strong> — soit 3 fois la surface du Soleil.</p>
+<div class="db">☢️ <strong>Effets d'un arc électrique :</strong><br>
+• Projection de métal fondu et vapeur de cuivre (expansion ×67 000 du volume)<br>
+• Lumière UV intense (brûlures oculaires à plusieurs mètres)<br>
+• Onde de pression et onde sonore (rupture des tympans possible)<br>
+• Brûlures profondes même à travers les vêtements ordinaires<br>
+• Incendie des matériaux environnants</div>
+<h3>Suivi médical après une électrisation</h3>
+<div class="ib">⚕️ <strong>Toute personne ayant subi une électrisation — même apparemment légère — doit impérativement être examinée par un médecin.</strong><br>
+Des troubles du rythme cardiaque (arythmies, extrasystoles) peuvent apparaître plusieurs heures après l'accident. Les brûlures internes peuvent être graves même si la surface paraît intacte. Ne jamais laisser repartir une victime d'électrisation sans contrôle médical.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q4b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-4b">
+<button class="bpg" id="prev-4b" onclick="chPg('4b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-4b"></div>
+<button class="bpg" id="next-4b" onclick="chPg('4b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q4b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 4 — Question 2/2</h3>
+<div class="qq">Un technicien travaille dans un local humide avec la peau mouillée (code BB2). Quelle est la tension limite conventionnelle absolue en courant alternatif qui s'applique ?</div>
+<div class="opts" id="o4b"></div>
+<div id="f4b" class="fb"></div>
+<button class="bn" id="n4b" onclick="goTo('s5a')">Continuer →</button>
+<button class="br2" id="r4b" onclick="goTo('s4b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH5A ===== -->
+<div id="s5a" class="sc">
+<div class="sh"><div class="cn">5</div><div><h2>Protection contre les contacts directs</h2><div class="sub">Partie 1/2 — Enveloppes, indice IP et isolation</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-5a-1">
+<h3>Les méthodes de protection contre les contacts directs</h3>
+<div class="pr">
+<div class="pc"><span class="ic">📦</span><strong>Enveloppes / Boîtiers</strong>Mise des parties actives dans des boîtiers fermés à indice IP approprié. Méthode la plus courante.</div>
+<div class="pc"><span class="ic">🧲</span><strong>Isolation</strong>Revêtement isolant des conducteurs (gaines, vernissage). Empêche le contact avec les parties conductrices.</div>
+<div class="pc"><span class="ic">📏</span><strong>Éloignement</strong>Parties actives hors de portée (hauteur, barrières). Distances minimales selon tension.</div>
+<div class="pc"><span class="ic">🔋</span><strong>TBTS</strong>Très Basse Tension de Sécurité ≤ 50 V CA. Tension trop basse pour être dangereuse en conditions normales.</div>
+<div class="pc"><span class="ic">⚡</span><strong>DDR 30 mA</strong>Protection complémentaire — coupe en &lt; 30 ms si fuite de courant &gt; 30 mA.</div>
+</div>
+</div>
+<div class="pg" id="pg-5a-2">
+<h3>L'indice de protection IP — lecture et interprétation</h3>
+<p>L'indice IP (International Protection) est obligatoire sur tout matériel électrique. Il renseigne sur la protection contre la pénétration de corps solides et de liquides.</p>
+<div class="ib">🛡️ <strong>Format : IP X X</strong><br>
+<strong>1er chiffre</strong> = Protection contre corps solides (0 à 6)<br>
+<strong>2ème chiffre</strong> = Protection contre liquides (0 à 8)</div>
+<table class="dt"><tr><th>1er chiffre</th><th>Protection solides</th><th>2ème chiffre</th><th>Protection liquides</th></tr>
+<tr><td>0</td><td>Non protégé</td><td>0</td><td>Non protégé</td></tr>
+<tr><td>1</td><td>Corps ≥ 50 mm (dos de main)</td><td>1</td><td>Gouttes verticales</td></tr>
+<tr><td>2</td><td>Corps ≥ 12 mm (doigt)</td><td>2</td><td>Pluie 15°</td></tr>
+<tr><td>3</td><td>Corps ≥ 2,5 mm (outil)</td><td>3</td><td>Pluie 60° / ruissellement</td></tr>
+<tr><td>4</td><td>Corps ≥ 1 mm (fil fin)</td><td>4</td><td>Projections toutes directions</td></tr>
+<tr><td>5</td><td>Protégé poussières (sans dépôt nuisible)</td><td>5</td><td>Jets d'eau</td></tr>
+<tr class="hl"><td><strong>6</strong></td><td><strong>Étanche à la poussière</strong></td><td><strong>6</strong></td><td>Paquets d'eau</td></tr>
+<tr><td></td><td></td><td>7</td><td>Immersion temporaire (1 m / 30 min)</td></tr>
+<tr><td></td><td></td><td>8</td><td>Submersible (conditions définies)</td></tr>
+</table>
+<div class="eb">💼 <strong>Exemples pratiques :</strong><br>
+• <strong>IP20</strong> : tableau intérieur standard — protégé contre les doigts, pas contre les liquides<br>
+• <strong>IP44</strong> : matériel zone humide — corps &gt;1mm + projections d'eau toutes directions<br>
+• <strong>IP54</strong> : matériel industriel — anti-poussière + projections d'eau<br>
+• <strong>IP55</strong> : nettoyage au jet d'eau — protection jets directs<br>
+• <strong>IP65</strong> : matériel extérieur — étanche poussière + jets d'eau directs<br>
+• <strong>IP67</strong> : submersible temporaire (1 m pendant 30 min)</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q5a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-5a">
+<button class="bpg" id="prev-5a" onclick="chPg('5a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-5a"></div>
+<button class="bpg" id="next-5a" onclick="chPg('5a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q5a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 5 — Question 1/2</h3>
+<div class="qq">Un tableau électrique dans un local technique soumis au nettoyage au jet d'eau doit avoir un indice IP minimum de :</div>
+<div class="opts" id="o5a"></div>
+<div id="f5a" class="fb"></div>
+<button class="bn" id="n5a" onclick="goTo('s5b')">Continuer →</button>
+<button class="br2" id="r5a" onclick="goTo('s5a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH5B ===== -->
+<div id="s5b" class="sc">
+<div class="sh"><div class="cn">5</div><div><h2>Protection contre les contacts directs</h2><div class="sub">Partie 2/2 — DDR et TBTS</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-5b-1">
+<h3>Le Dispositif Différentiel à courant Résiduel (DDR)</h3>
+<p>Le DDR compare en permanence le courant entrant et sortant d'un circuit. Si une différence existe, c'est qu'une partie du courant s'écoule par une autre voie — potentiellement à travers une personne. Il coupe l'alimentation en &lt; 30 ms.</p>
+<div class="ib">⚡ <strong>Seuils de déclenchement et applications :</strong><br>
+• <strong>10 mA</strong> : zones très sensibles (salles d'opération, piscines)<br>
+• <strong>30 mA</strong> : protection des personnes — obligatoire pour prises et locaux ordinaires<br>
+• <strong>100–300 mA</strong> : protection incendie (bâtiments tertiaires)<br>
+• <strong>500 mA – 1 A</strong> : protection des installations industrielles</div>
+<div class="eb">⏱️ <strong>Vitesse de déclenchement :</strong> Un DDR 30 mA instantané se déclenche en moins de <strong>30 millisecondes</strong>. C'est suffisant pour éviter la fibrillation ventriculaire dans la plupart des cas, si le contact est bref.</div>
+<h4>Limites du DDR</h4>
+<ul>
+<li>Ne protège pas contre les courts-circuits entre phase et neutre (pas de courant résiduel)</li>
+<li>Ne protège pas si la personne est isolée du sol (pas de chemin de retour vers la terre)</li>
+<li>Doit être testé mensuellement (bouton test)</li>
+</ul>
+</div>
+<div class="pg" id="pg-5b-2">
+<h3>La TBTS — Très Basse Tension de Sécurité</h3>
+<p>La TBTS alimente un circuit avec une tension tellement basse qu'un contact accidentel ne présente pas de danger en conditions normales. Le transformateur <strong>doit être un transformateur de sécurité</strong> (séparation galvanique totale — pas un autotransformateur).</p>
+<table class="dt"><tr><th>État peau (BB)</th><th>Tension max CA</th><th>Tension max CC non lissé</th></tr>
+<tr><td>BB1 — sèche/sueur</td><td>25 V</td><td>60 V</td></tr>
+<tr><td>BB2 — mouillée</td><td>12 V</td><td>30 V</td></tr>
+<tr><td>BB3 — immergée</td><td>6 V</td><td>15 V</td></tr>
+</table>
+<div class="eb">💼 <strong>Applications TBTS courantes :</strong><br>
+• Éclairage de sécurité (24V DC)<br>
+• Automates et capteurs (24V DC)<br>
+• Éclairage de piscine (12V CA via transformateur de sécurité)<br>
+• Systèmes de contrôle d'accès et interphones (12–24V)</div>
+<div class="wi">⚠️ 24V DC est sans danger pour BB1 (peau sèche), mais peut être dangereux en BB2 ou BB3. En milieu humide, même les basses tensions demandent de la prudence.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q5b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-5b">
+<button class="bpg" id="prev-5b" onclick="chPg('5b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-5b"></div>
+<button class="bpg" id="next-5b" onclick="chPg('5b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q5b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 5 — Question 2/2</h3>
+<div class="qq">Quel seuil de déclenchement d'un DDR assure la protection des personnes dans un local ordinaire, et pourquoi ce seuil spécifiquement ?</div>
+<div class="opts" id="o5b"></div>
+<div id="f5b" class="fb"></div>
+<button class="bn" id="n5b" onclick="goTo('s6a')">Continuer →</button>
+<button class="br2" id="r5b" onclick="goTo('s5b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH6A ===== -->
+<div id="s6a" class="sc">
+<div class="sh"><div class="cn">6</div><div><h2>Protection contre les contacts indirects</h2><div class="sub">Partie 1/2 — Schémas de mise à la terre</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-6a-1">
+<h3>Les 3 schémas de liaisons à la terre (RGIE)</h3>
+<p>En Belgique, trois schémas définissent la façon dont le neutre de la source et les masses des installations sont reliés à la terre. Le choix du schéma conditionne les dispositifs de protection à utiliser.</p>
+<div class="ib">📖 <strong>Lecture des codes :</strong><br>
+<strong>1ère lettre</strong> — la SOURCE : T = neutre relié à la terre locale / I = source isolée de la terre<br>
+<strong>2ème lettre</strong> — les MASSES : T = masses reliées à une terre indépendante / N = masses reliées au neutre<br>
+<strong>3ème lettre (TN)</strong> : C = PE+N combiné (PEN) / S = PE et N séparés</div>
+<div class="pr">
+<div class="pc"><span class="ic">🔲</span><strong>Schéma TT</strong>Neutre source relié à la terre (T). Masses reliées à une terre indépendante (T). DDR obligatoires. Dominant en Belgique pour le résidentiel et le tertiaire.</div>
+<div class="pc"><span class="ic">🔳</span><strong>Schéma IT</strong>Source isolée de la terre (I). Masses reliées à la terre (T). Au 1er défaut : installation continue à fonctionner — alarme CPI. Hôpitaux, industrie critique.</div>
+<div class="pc"><span class="ic">⬛</span><strong>Schéma TN</strong>Neutre source relié à la terre (T). Masses reliées au neutre (N). Courant de défaut élevé → protection par disjoncteurs surintensité. Variantes TN-C, TN-S, TN-C-S.</div>
+</div>
+</div>
+<div class="pg" id="pg-6a-2">
+<h3>Dispositifs de protection selon le schéma</h3>
+<table class="dt"><tr><th>Schéma</th><th>Dispositif principal</th><th>Pourquoi</th></tr>
+<tr><td>TT</td><td>DDR (différentiels)</td><td>Courant de défaut trop faible pour déclencher un disjoncteur courant — le DDR détecte toute fuite vers la terre</td></tr>
+<tr><td>TN</td><td>Disjoncteurs à maximum de courant</td><td>Courant de défaut élevé (quasi-court-circuit) → déclenche les protections surintensité</td></tr>
+<tr><td>IT</td><td>CPI (contrôleur d'isolement) + protection 2ème défaut</td><td>1er défaut → alarme seulement. 2ème défaut → coupure par surintensité ou DDR</td></tr>
+</table>
+<div class="ib">🔧 <strong>Protection active vs passive :</strong><br>
+• <strong>Active :</strong> coupure automatique de l'alimentation en cas de défaut (DDR, disjoncteur)<br>
+• <strong>Passive :</strong> éviter qu'un défaut rende les masses dangereuses (double isolation, TBTS, séparation)</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q6a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-6a">
+<button class="bpg" id="prev-6a" onclick="chPg('6a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-6a"></div>
+<button class="bpg" id="next-6a" onclick="chPg('6a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q6a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 6 — Question 1/2</h3>
+<div class="qq">Dans le schéma IT, quelle caractéristique permet à l'installation de continuer à fonctionner lors d'un premier défaut d'isolation ?</div>
+<div class="opts" id="o6a"></div>
+<div id="f6a" class="fb"></div>
+<button class="bn" id="n6a" onclick="goTo('s6b')">Continuer →</button>
+<button class="br2" id="r6a" onclick="goTo('s6a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH6B ===== -->
+<div id="s6b" class="sc">
+<div class="sh"><div class="cn">6</div><div><h2>Protection contre les contacts indirects</h2><div class="sub">Partie 2/2 — Classes de matériel électrique</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-6b-1">
+<h3>Classes de matériel électrique — tableau complet</h3>
+<table class="dt"><tr><th>Classe</th><th>Principe de protection</th><th>Symbole</th><th>Exemples pratiques</th></tr>
+<tr><td><strong>Classe 0</strong></td><td>Isolation principale uniquement, sans liaison à la terre. <em>Interdit en installation professionnelle</em></td><td>Aucun</td><td>Anciennes lampes, matériel obsolète</td></tr>
+<tr><td><strong>Classe I</strong></td><td>Isolation principale + conducteur PE (vert/jaune) reliant les masses à la terre</td><td>⏚</td><td>Machines-outils, réfrigérateurs, fours, machines à laver</td></tr>
+<tr class="hl"><td><strong>Classe II</strong></td><td>Double isolation ou isolation renforcée. Masses NON reliées à la terre.</td><td>□□</td><td>Perceuses portatives, aspirateurs, chargeurs, lampes de bureau plastiques</td></tr>
+<tr><td><strong>Classe III</strong></td><td>Alimentation TBTS (≤ 50V CA). Masses non reliées à la terre.</td><td>◇III◇</td><td>Jouets, rasoirs de salle de bains, éclairage jardin 12V</td></tr>
+</table>
+</div>
+<div class="pg" id="pg-6b-2">
+<h3>Identifier la classe d'un appareil — conseils pratiques</h3>
+<div class="ib">🔍 <strong>Comment reconnaître la classe :</strong><br>
+• <strong>Classe I :</strong> fiche 3 broches (avec broche de terre), câble avec fil vert/jaune, boîtier métallique relié à la terre<br>
+• <strong>Classe II :</strong> symbole double carré □□ sur l'appareil, fiche 2 broches sans terre, entièrement en plastique ou boîtier double-paroi<br>
+• <strong>Classe III :</strong> alimenté via transformateur de sécurité, tension ≤ 50V, marquage ◇III◇</div>
+<div class="wi">⚠️ <strong>Erreur fréquente :</strong> un appareil classe II sans prise de terre n'est pas "mal câblé" — c'est intentionnel. Le relier à la terre serait une erreur. En cas de doute sur la classe d'un appareil, consultez sa documentation ou un BA5.</div>
+<h4>La double isolation — comment ça fonctionne ?</h4>
+<p>Un appareil classe II possède deux barrières d'isolation indépendantes :</p>
+<ul>
+<li><strong>Isolation principale :</strong> isole le conducteur sous tension du reste de l'appareil</li>
+<li><strong>Isolation supplémentaire (ou renforcée) :</strong> deuxième couche indépendante — si l'isolation principale tombe en défaut, les parties accessibles restent protégées</li>
+</ul>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q6b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-6b">
+<button class="bpg" id="prev-6b" onclick="chPg('6b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-6b"></div>
+<button class="bpg" id="next-6b" onclick="chPg('6b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q6b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 6 — Question 2/2</h3>
+<div class="qq">Un outil électroportatif de classe II est caractérisé par :</div>
+<div class="opts" id="o6b"></div>
+<div id="f6b" class="fb"></div>
+<button class="bn" id="n6b" onclick="goTo('s7a')">Continuer →</button>
+<button class="br2" id="r6b" onclick="goTo('s6b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH7A ===== -->
+<div id="s7a" class="sc">
+<div class="sh"><div class="cn">7</div><div><h2>Les travaux aux installations électriques</h2><div class="sub">Partie 1/2 — Organisation, rôles et règles comportementales</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-7a-1">
+<h3>Principe fondamental : travail hors tension par défaut</h3>
+<p>Tout travail aux installations électriques doit être réalisé <strong>hors tension</strong> en règle générale. Les travaux sous tension sont une exception strictement encadrée, réservée aux BA5 avec formation spécifique et matériel homologué.</p>
+<div class="wi">⚠️ <strong>Travaux sous tension — 3 conditions cumulatives :</strong><br>
+1. Les caractéristiques de l'installation le permettent techniquement<br>
+2. Une méthode de travail adéquate et homologuée est appliquée<br>
+3. Les exigences impérieuses du service l'imposent</div>
+<h3>La chaîne de responsabilité</h3>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Chef d'établissement / Employeur</strong>Responsabilité légale ultime. Délègue la gestion électrique au CIE.</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Chargé de l'Installation Électrique (CIE) — BA5</strong>Responsable de chaque installation. Évalue les risques. Donne l'autorisation de travail. Réalise ou supervise la consignation.</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>Chargé des Travaux (CT) — BA5 minimum</strong>Définit la zone de travail avec le CIE. Dirige et surveille les exécutants. Remet l'avis de fin de travaux au CIE avant remise en service.</div></div>
+<div class="step"><div class="sn">4</div><div class="sc2"><strong>Exécutants — BA4 ou BA5</strong>Réalisent les travaux dans la zone désignée. Suivent les instructions du CT. Ne prennent aucune initiative sans accord.</div></div>
+</div>
+<div class="ib">💡 Le CIE et le CT <strong>peuvent être une seule et même personne</strong>.</div>
+</div>
+<div class="pg" id="pg-7a-2">
+<h3>Règles comportementales lors de tout travail électrique</h3>
+<ul>
+<li>❌ <strong>Retirer tous les bijoux et éléments conducteurs</strong> (montre, bague, bracelet, chaîne) — peuvent provoquer un arc ou concentrer l'énergie sur la peau</li>
+<li>👕 Porter des <strong>vêtements couvrants et difficilement inflammables</strong> — jamais de synthétiques purs (polyester pur fond sous arc)</li>
+<li>📋 <strong>Évaluation préalable des risques</strong> obligatoire avant tout début de travaux</li>
+<li>🔧 Utiliser uniquement du <strong>matériel adapté, entretenu et correctement utilisé</strong></li>
+<li>📢 Personnel <strong>informé des prescriptions de sécurité</strong> avant le début des travaux</li>
+<li>🌩️ <strong>Arrêt immédiat en cas d'orage</strong> — informer le CIE — ne reprendre qu'avec son accord</li>
+<li>👁️ <strong>Ne jamais travailler seul</strong> en BA4 sur ou à proximité immédiate d'installations électriques</li>
+</ul>
+<div class="db">⛈️ <strong>En cas d'orage :</strong> les activités doivent cesser immédiatement. Le Chargé de l'Installation doit être informé. Si mauvaise visibilité : aucun travail ne peut être entrepris ou poursuivi. Ce n'est pas une recommandation — c'est une obligation réglementaire.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q7a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-7a">
+<button class="bpg" id="prev-7a" onclick="chPg('7a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-7a"></div>
+<button class="bpg" id="next-7a" onclick="chPg('7a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q7a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 7 — Question 1/2</h3>
+<div class="qq">Qui donne l'autorisation officielle de débuter les travaux sur une installation électrique ?</div>
+<div class="opts" id="o7a"></div>
+<div id="f7a" class="fb"></div>
+<button class="bn" id="n7a" onclick="goTo('s7b')">Continuer →</button>
+<button class="br2" id="r7a" onclick="goTo('s7a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH7B ===== -->
+<div id="s7b" class="sc">
+<div class="sh"><div class="cn">7</div><div><h2>Les travaux aux installations électriques</h2><div class="sub">Partie 2/2 — Zones de travail et opérations autorisées BA4</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-7b-1">
+<h3>Zones d'environnement lors des travaux</h3>
+<div class="pr">
+<div class="pc"><span class="ic">🔴</span><strong>Zone sous tension</strong>Espace autour des PNST. Accès INTERDIT sauf autorisation spéciale et EPI adaptés. Un BA4 n'y entre jamais de sa propre initiative.</div>
+<div class="pc"><span class="ic">🟡</span><strong>Zone de voisinage</strong>Autour de la zone sous tension. Attention maximale. Un mouvement non contrôlé peut amener dans la zone sous tension.</div>
+<div class="pc"><span class="ic">🔵</span><strong>Zone d'investigation</strong>Pour canalisations isolées — surveillance accrue. Risque si l'isolation est défaillante.</div>
+<div class="pc"><span class="ic">🟢</span><strong>Zone d'approche prudente</strong>Périphérie des canalisations isolées. Travaux avec précautions de base.</div>
+</div>
+</div>
+<div class="pg" id="pg-7b-2">
+<h3>Opérations autorisées et interdites pour un BA4</h3>
+<div class="sb">✅ <strong>Opérations pouvant être réalisées par un BA4 (si spécifiées dans le dossier) :</strong><br>
+• Réarmement d'un disjoncteur différentiel après déclenchement, sur instruction du responsable<br>
+• Mise en/hors service d'un circuit via un interrupteur clairement identifié<br>
+• Contrôles visuels d'état (sans ouverture des enveloppes)<br>
+• Lecture d'appareils de mesure extérieurs (compteurs, indicateurs)</div>
+<div class="db">🚫 <strong>Opérations INTERDITES pour un BA4 :</strong><br>
+• Manœuvrer des coupe-circuits à fusibles sous courant (circuit en charge) dans les installations HT et BT 2ème catégorie<br>
+• Ouvrir les coffrets et enveloppes de protection<br>
+• Intervenir sur des circuits dont l'état (sous tension / hors tension) n'est pas clairement établi<br>
+• Effectuer des essais avec source d'alimentation extérieure sans procédure écrite du CIE</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q7b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-7b">
+<button class="bpg" id="prev-7b" onclick="chPg('7b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-7b"></div>
+<button class="bpg" id="next-7b" onclick="chPg('7b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q7b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 7 — Question 2/2</h3>
+<div class="qq">Lors des travaux électriques, que doit faire le personnel en cas d'orage ?</div>
+<div class="opts" id="o7b"></div>
+<div id="f7b" class="fb"></div>
+<button class="bn" id="n7b" onclick="goTo('s8a')">Continuer →</button>
+<button class="br2" id="r7b" onclick="goTo('s7b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH8A ===== -->
+<div id="s8a" class="sc">
+<div class="sh"><div class="cn">8</div><div><h2>La consignation — Travail hors tension</h2><div class="sub">Partie 1/2 — Les 7 étapes et la VAT</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-8a-1">
+<h3>La consignation — définition et obligation</h3>
+<p>La consignation est l'ensemble des opérations permettant de <strong>mettre et maintenir hors tension une installation</strong> de façon sécurisée et irréversible sans action volontaire, afin de permettre des travaux sans risque d'électrisation.</p>
+<div class="db">☠️ <strong>La consignation n'est pas facultative !</strong> Travailler sans consignation préalable constitue une faute grave exposant l'employeur et le travailleur à des sanctions pénales — et surtout met des vies en danger. Chaque année, des accidents mortels surviennent faute de consignation.</div>
+<p>La consignation est réalisée par le <strong>Chargé de l'Installation Électrique (CIE — BA5)</strong>. Le BA4 ne réalise pas la consignation : il en bénéficie.</p>
+</div>
+<div class="pg" id="pg-8a-2">
+<h3>Les 7 étapes de la consignation</h3>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Préparer les travaux</strong>Identifier les installations concernées. Obtenir l'autorisation du CIE. Identifier TOUTES les sources d'alimentation (y compris secours, UPS, panneaux PV, condensateurs).</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Séparer</strong>Séparer la partie concernée de TOUTES ses sources. Couper disjoncteurs, sectionneurs, interrupteurs. Attention aux sources multiples (secours, cogénération, photovoltaïque).</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>Verrouiller / Condamner</strong>Poser des cadenas personnels sur les organes de coupure. Afficher étiquettes "DANGER — NE PAS MANŒUVRER — TRAVAUX EN COURS". Empêcher toute réalimentation.</div></div>
+<div class="step"><div class="sn">4</div><div class="sc2"><strong>Vérifier l'Absence de Tension (VAT)</strong>Contrôler avec un VAT homologué et testé sur TOUS les conducteurs actifs. Séquence : tester le VAT sur source connue → mesurer → retester le VAT sur source connue.</div></div>
+<div class="step"><div class="sn">5</div><div class="sc2"><strong>Mise à la terre et en court-circuit</strong>Obligatoire pour HT. Pour BT : si risque de réalimentation et pas d'autre moyen. Protège contre les surtensions et ré-alimentations accidentelles.</div></div>
+<div class="step"><div class="sn">6</div><div class="sc2"><strong>Baliser / Isoler</strong>Délimiter physiquement la zone. Poser barrières, rubans, panneaux. Isoler les parties actives voisines restées sous tension.</div></div>
+<div class="step"><div class="sn">7</div><div class="sc2"><strong>Mettre à disposition</strong>Remettre formellement la zone au Chargé des Travaux. Délivrer l'autorisation de travail écrite.</div></div>
+</div>
+</div>
+<div class="pg" id="pg-8a-3">
+<h3>La VAT — règle d'or et sources souvent oubliées</h3>
+<div class="db">🔑 <strong>Règle absolue de la VAT (Vérification d'Absence de Tension) :</strong><br>
+1. Tester le VAT sur une source <strong>connue et sous tension</strong> → confirmer qu'il fonctionne<br>
+2. Mesurer sur l'installation consignée → vérifier l'absence sur TOUS les conducteurs actifs<br>
+3. Retester le VAT sur la source connue → confirmer qu'il fonctionne encore<br><br>
+Cette séquence en 3 temps garantit que le VAT n'était pas défaillant pendant la mesure.</div>
+<div class="wi">⚠️ <strong>Sources d'énergie souvent oubliées lors de la consignation :</strong><br>
+• Batteries et onduleurs UPS (alimentent même réseau coupé)<br>
+• Condensateurs de compensation (restent chargés après coupure)<br>
+• Génératrices de secours à démarrage automatique<br>
+• Panneaux photovoltaïques (génèrent du courant en présence de lumière)<br>
+• Retour de tension par couplage inductif ou capacitif</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q8a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-8a">
+<button class="bpg" id="prev-8a" onclick="chPg('8a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-8a"></div>
+<button class="bpg" id="next-8a" onclick="chPg('8a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q8a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 8 — Question 1/2</h3>
+<div class="qq">Dans la procédure de consignation, quelle étape suit immédiatement le verrouillage/condamnation (étape 3) ? Pourquoi cet ordre est-il impératif ?</div>
+<div class="opts" id="o8a"></div>
+<div id="f8a" class="fb"></div>
+<button class="bn" id="n8a" onclick="goTo('s8b')">Continuer →</button>
+<button class="br2" id="r8a" onclick="goTo('s8a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH8B ===== -->
+<div id="s8b" class="sc">
+<div class="sh"><div class="cn">8</div><div><h2>La consignation — Travail hors tension</h2><div class="sub">Partie 2/2 — Rôle du BA4 et fin de travaux</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-8b-1">
+<h3>Obligations de l'exécutant BA4 pendant les travaux</h3>
+<div class="ib">👷 <strong>Pendant les travaux, l'exécutant BA4 doit :</strong><br>
+• Opérer <strong>uniquement dans la zone délimitée</strong> remise par le CT<br>
+• Appliquer <strong>scrupuleusement</strong> les instructions reçues du Chargé des Travaux<br>
+• <strong>Ne jamais dépasser les limites</strong> de la zone balisée, même partiellement<br>
+• Signaler immédiatement au CT tout danger, anomalie ou situation imprévue<br>
+• Rendre compte de l'avancement au CT<br>
+• <strong>Ne plus revenir</strong> dans la zone de travail après la fin des travaux, sauf autorisation explicite</div>
+<div class="db">🚫 <strong>Le BA4 ne doit jamais :</strong><br>
+• Prendre d'initiative en matière de sécurité électrique sans l'accord du CT<br>
+• Tenter de résoudre seul une situation électrique anormale<br>
+• Accepter d'être laissé seul dans une zone à risque électrique<br>
+• Ignorer un signal d'alarme ou une anomalie par souci de "ne pas déranger"</div>
+</div>
+<div class="pg" id="pg-8b-2">
+<h3>Fin des travaux — procédure obligatoire du CT</h3>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Vérifier la bonne exécution</strong>Contrôler que le travail est terminé. S'assurer que tous les outils et matériaux ont été retirés de la zone.</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Rassembler tout le personnel</strong>S'assurer que toutes les personnes ayant travaillé dans la zone sont sorties et présentes. Faire le décompte si nécessaire.</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>Signifier l'interdiction définitive d'accès</strong>Informer clairement tout le personnel qu'il est désormais interdit de retourner dans la zone sans nouvelle autorisation.</div></div>
+<div class="step"><div class="sn">4</div><div class="sc2"><strong>Rendre compte au CIE</strong>Informer le Chargé de l'Installation que les travaux sont terminés et la zone prête pour remise en service.</div></div>
+<div class="step"><div class="sn">5</div><div class="sc2"><strong>Remettre l'avis de fin de travaux</strong>Document obligatoire remis au CIE. Sans ce document, aucune remise en service n'est autorisée.</div></div>
+</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q8b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-8b">
+<button class="bpg" id="prev-8b" onclick="chPg('8b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-8b"></div>
+<button class="bpg" id="next-8b" onclick="chPg('8b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q8b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 8 — Question 2/2</h3>
+<div class="qq">Que doit faire un exécutant BA4 s'il constate une situation dangereuse non prévue dans la zone de travail ?</div>
+<div class="opts" id="o8b"></div>
+<div id="f8b" class="fb"></div>
+<button class="bn" id="n8b" onclick="goTo('s9a')">Continuer →</button>
+<button class="br2" id="r8b" onclick="goTo('s8b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH9A ===== -->
+<div id="s9a" class="sc">
+<div class="sh"><div class="cn">9</div><div><h2>Équipements de Protection Individuelle</h2><div class="sub">Partie 1/2 — EPI électriques et leur utilisation correcte</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-9a-1">
+<h3>Les EPI — dernière barrière de protection</h3>
+<p>Les EPI constituent la <strong>dernière ligne de défense</strong> lorsque les protections collectives ne peuvent pas éliminer totalement le risque. Ils sont fournis gratuitement par l'employeur, qui est tenu de vérifier leur adéquation et leur état.</p>
+<div class="wi">⚠️ Les EPI <strong>ne remplacent pas les mesures collectives</strong> (enveloppes, consignation, balisage). Un EPI défectueux ou mal utilisé n'offre aucune protection. La vérification avant chaque usage est non négociable.</div>
+<div class="pr">
+<div class="pc"><span class="ic">🧤</span><strong>Gants isolants</strong>Classes 00 à 4. Classe 00 = jusqu'à 500V. Classe 4 = jusqu'à 36 kV. Inspection visuelle + test gonflage avant chaque usage.</div>
+<div class="pc"><span class="ic">⛑️</span><strong>Casque isolant</strong>Protection mécanique ET contre les arcs. Avec visière anti-arc si risque identifié.</div>
+<div class="pc"><span class="ic">🥽</span><strong>Lunettes / Écran facial</strong>Protection UV/IR des arcs, projections de métal fondu. Obligatoire si risque d'arc présent.</div>
+<div class="pc"><span class="ic">👟</span><strong>Chaussures isolantes</strong>Semelle isolante certifiée. Protègent contre courants de pas et chocs électriques par le sol.</div>
+<div class="pc"><span class="ic">🦺</span><strong>Vêtements anti-arc</strong>Coton ignifugé ou fibres aramides. JAMAIS polyester pur (fond à 260°C). Protègent contre les brûlures par arc.</div>
+<div class="pc"><span class="ic">🔧</span><strong>Outillage isolé</strong>Marquage ⚡1000V. Certifié IEC 60900. Pour travaux BT hors tension au voisinage de parties actives.</div>
+<div class="pc"><span class="ic">🔍</span><strong>VAT — Vérificateur d'Absence de Tension</strong>Instrument homologué CAT III minimum. Testé avant et après utilisation.</div>
+</div>
+</div>
+<div class="pg" id="pg-9a-2">
+<h3>Inspection des gants isolants — points critiques</h3>
+<div class="steps">
+<div class="step"><div class="sn">✓</div><div class="sc2"><strong>Inspection visuelle avant chaque usage</strong>Absence de coupures, perforations, brûlures, traces de produits chimiques, durcissement ou ramollissement. Rouler le revers vers la paume pour emprisonner l'air : tester l'étanchéité (test gonflage).</div></div>
+<div class="step"><div class="sn">✓</div><div class="sc2"><strong>Vérifier la date de péremption</strong>Les gants ont une date de fabrication et de test diélectrique estampillées. Un gant dont la date est dépassée NE DOIT PAS être utilisé — même s'il semble visuellement parfait.</div></div>
+<div class="step"><div class="sn">✓</div><div class="sc2"><strong>Classe appropriée à la tension</strong>Gants classe 00 (500V) ≠ intervention sur installation 6,6 kV. La classe doit correspondre à la tension de travail.</div></div>
+<div class="step"><div class="sn">✓</div><div class="sc2"><strong>Stockage correct</strong>À l'abri de la chaleur, lumière directe, produits chimiques et objets pointus. Dans leur sac de protection individuel. Ne jamais les replier ou écraser.</div></div>
+</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q9a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-9a">
+<button class="bpg" id="prev-9a" onclick="chPg('9a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-9a"></div>
+<button class="bpg" id="next-9a" onclick="chPg('9a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q9a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 9 — Question 1/2</h3>
+<div class="qq">Concernant les gants isolants électriques, quelle affirmation est correcte ?</div>
+<div class="opts" id="o9a"></div>
+<div id="f9a" class="fb"></div>
+<button class="bn" id="n9a" onclick="goTo('s9b')">Continuer →</button>
+<button class="br2" id="r9a" onclick="goTo('s9a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH9B ===== -->
+<div id="s9b" class="sc">
+<div class="sh"><div class="cn">9</div><div><h2>Équipements de Protection Individuelle</h2><div class="sub">Partie 2/2 — Signalisation et règles pratiques d'intervention</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-9b-1">
+<h3>Signalisation de sécurité électrique</h3>
+<div class="pr">
+<div class="pc"><span class="ic">⚡</span><strong>Triangle jaune/noir</strong>Danger électrique. Interdit d'approcher sans habilitation appropriée.</div>
+<div class="pc"><span class="ic">🔴</span><strong>Rond rouge barré</strong>Interdiction. Ex. : "Ne pas manœuvrer — travaux en cours" sur un organe consigné.</div>
+<div class="pc"><span class="ic">🔵</span><strong>Rond bleu</strong>Obligation. Ex. : "Port de gants isolants obligatoire dans cette zone".</div>
+<div class="pc"><span class="ic">🟩</span><strong>Carré/rectangle vert</strong>Secours. Localisation DEA, extincteurs, pharmacies, sorties de secours.</div>
+</div>
+<div class="wi">⚠️ <strong>Panneau "NE PAS MANŒUVRER — TRAVAUX EN COURS" :</strong> il signifie qu'une consignation est en cours. Le retirer ou manœuvrer l'appareil est formellement interdit et met en danger le personnel en train de travailler.</div>
+</div>
+<div class="pg" id="pg-9b-2">
+<h3>Règles pratiques — résumé opérationnel</h3>
+<div class="ib">📌 <strong>Avant TOUTE opération à proximité d'installations électriques :</strong><br>
+• ❌ Retirer montres, bracelets, bagues, chaînes et tout bijou conducteur<br>
+• 👕 Vêtements couvrants et non synthétiques<br>
+• 🔍 Inspecter visuellement les EPI disponibles<br>
+• 📋 Vérifier l'autorisation du CT et que la zone est consignée<br>
+• ❓ En cas de doute : DEMANDER avant d'agir — jamais improviser</div>
+<div class="ib">📌 <strong>Pendant les travaux :</strong><br>
+• Rester dans la zone balisée attribuée<br>
+• Ne jamais travailler seul sans surveillance BA5<br>
+• Signaler immédiatement toute anomalie au CT<br>
+• Ne pas utiliser d'outil non isolé à proximité de parties actives</div>
+<div class="ib">📌 <strong>Après les travaux :</strong><br>
+• Récupérer TOUS les outils et matériaux<br>
+• Quitter la zone et informer le CT<br>
+• Ne jamais retourner sans nouvelle autorisation<br>
+• Signaler tout dommage ou anomalie constatée</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q9b')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-9b">
+<button class="bpg" id="prev-9b" onclick="chPg('9b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-9b"></div>
+<button class="bpg" id="next-9b" onclick="chPg('9b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q9b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 9 — Question 2/2</h3>
+<div class="qq">Lors de toute opération électrique, que doit obligatoirement faire le travailleur concernant ses bijoux ?</div>
+<div class="opts" id="o9b"></div>
+<div id="f9b" class="fb"></div>
+<button class="bn" id="n9b" onclick="goTo('s10a')">Continuer →</button>
+<button class="br2" id="r9b" onclick="goTo('s9b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH10A ===== -->
+<div id="s10a" class="sc">
+<div class="sh"><div class="cn">10</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 1/2 — Séquence P-A-S et DEA</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-10a-1">
+<h3>Règle absolue : protéger AVANT de toucher</h3>
+<div class="db">☠️ <strong>PRIORITÉ ABSOLUE : Ne jamais toucher une victime d'électrisation sans avoir d'abord coupé le courant !</strong><br><br>
+Toucher une personne encore en contact électrique vous rend à votre tour victime. On déplore chaque année des "doubles victimes" dues à des sauveteurs qui ont voulu aider sans couper l'alimentation.</div>
+<h3>La séquence P-A-S (Protéger — Alerter — Secourir)</h3>
+<div class="steps">
+<div class="step"><div class="sn">P</div><div class="sc2"><strong>PROTÉGER — Sécuriser la zone</strong>Couper l'alimentation IMMÉDIATEMENT si possible et facilement accessible (disjoncteur, interrupteur, prise). Si impossible : ne pas toucher la victime. Appeler du secours qualifié. Éloigner les témoins pour éviter d'autres victimes.</div></div>
+<div class="step"><div class="sn">A</div><div class="sc2"><strong>ALERTER — Appeler les secours sans délai</strong>Appeler le <strong>100</strong> (aide médicale urgente) ou le <strong>112</strong> (numéro européen). Donner : adresse précise, nature de l'accident, état apparent de la victime, nombre de victimes. Rester en ligne si demandé.</div></div>
+<div class="step"><div class="sn">S</div><div class="sc2"><strong>SECOURIR — Premiers secours (après coupure confirmée)</strong>Vérifier la conscience. Si inconscient et ne respire pas normalement → commencer la RCP (30 compressions / 2 insufflations). Si un DEA est disponible → l'utiliser immédiatement.</div></div>
+</div>
+</div>
+<div class="pg" id="pg-10a-2">
+<h3>Le DEA — Défibrillateur Externe Automatisé</h3>
+<p>La fibrillation ventriculaire électrique est potentiellement <strong>réversible</strong> si la défibrillation est appliquée rapidement. Chaque minute sans défibrillation réduit les chances de survie d'environ <strong>10%</strong>.</p>
+<div class="sb">💚 <strong>Le DEA est conçu pour être utilisé par n'importe qui :</strong><br>
+• L'appareil analyse lui-même le rythme cardiaque<br>
+• Il guide l'utilisateur par instructions vocales pas à pas<br>
+• Il ne délivre un choc QUE si c'est nécessaire (fibrillation détectée)<br>
+• Il est impossible de "faire du mal" avec un DEA en suivant ses instructions<br>
+• Localisez les DEA de votre établissement maintenant — pas au moment de l'urgence !</div>
+<h3>Numéros d'urgence belges</h3>
+<div class="pr">
+<div class="pc"><span class="ic">🚑</span><strong>100</strong>Aide médicale urgente (SMUR, ambulance)</div>
+<div class="pc"><span class="ic">🚔</span><strong>101</strong>Police (peut aussi coordonner les secours)</div>
+<div class="pc"><span class="ic">🆘</span><strong>112</strong>Numéro européen — regroupe tous les services</div>
+<div class="pc"><span class="ic">☠️</span><strong>070 245 245</strong>Centre Antipoisons belge</div>
+</div>
+<div class="wi">⚕️ <strong>Important après une électrisation même légère :</strong> Toute victime DOIT consulter un médecin. Des troubles du rythme cardiaque peuvent apparaître plusieurs heures après l'accident. Ne jamais laisser repartir une victime sans contrôle médical.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q10a')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-10a">
+<button class="bpg" id="prev-10a" onclick="chPg('10a',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-10a"></div>
+<button class="bpg" id="next-10a" onclick="chPg('10a',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q10a" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 1/2</h3>
+<div class="qq">Vous découvrez un collègue inconscient au contact d'une installation électrique encore sous tension. Quelle est la PREMIÈRE action à effectuer ?</div>
+<div class="opts" id="o10a"></div>
+<div id="f10a" class="fb"></div>
+<button class="bn" id="n10a" onclick="goTo('s10b')">Continuer →</button>
+<button class="br2" id="r10a" onclick="goTo('s10a')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH10B ===== -->
+<div id="s10b" class="sc">
+<div class="sh"><div class="cn">10</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 2/2 — Autorisations, interdictions BA4 et récapitulatif</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-10b-1">
+<h3>Autorisations et interdictions BA4 — synthèse finale</h3>
+<div class="sb">✅ <strong>Un BA4 est autorisé à :</strong><br>
+• Travailler à proximité d'installations sous surveillance permanente d'un BA5<br>
+• Réaliser les opérations d'exploitation simples de son dossier (ex. : réarmer un DDR sur instruction)<br>
+• Utiliser les EPI et outillage isolé mis à disposition<br>
+• Signaler et documenter les anomalies électriques<br>
+• Entrer dans les locaux électriques accompagné d'un BA5 avec son autorisation<br>
+• Appliquer les premiers gestes de sécurité en cas d'accident (P-A-S) sans prendre de risque électrique</div>
+<div class="db">🚫 <strong>Un BA4 ne peut jamais — en aucune circonstance :</strong><br>
+• Travailler seul sur une installation électrique sans surveillance BA5<br>
+• Ouvrir les enveloppes de protection (coffrets, capots) — même "juste pour regarder"<br>
+• Toucher des parties actives sous tension — même avec des EPI<br>
+• Effectuer des travaux sous tension (réservés aux BA5 formés)<br>
+• Pénétrer en zone sous tension sans autorisation écrite du CIE<br>
+• Dépasser les limites de son dossier d'habilitation<br>
+• Ignorer un verrouillage ou un panneau "travaux en cours"</div>
+</div>
+<div class="pg" id="pg-10b-2">
+<h3>Récapitulatif de la formation BA4</h3>
+<div class="ib">📋 <strong>À l'issue de cette formation, vous avez acquis les connaissances sur :</strong><br>
+• L'habilitation électrique BA4 et la réglementation belge (RGIE, Code du Bien-Être)<br>
+• Les grandeurs électriques fondamentales (U, I, R, P) et la loi d'Ohm<br>
+• Les risques électriques : contacts directs, indirects, tension de pas, arcs<br>
+• Les effets physiologiques du courant et les seuils de danger<br>
+• Les mesures de protection collective (IP, DDR, TBTS, schémas TT/IT/TN)<br>
+• La chaîne de responsabilité et l'organisation des travaux (CIE, CT, exécutants)<br>
+• Les 7 étapes de consignation pour le travail hors tension et la procédure VAT<br>
+• L'utilisation correcte des EPI électriques<br>
+• La conduite à tenir en cas d'accident électrique (P-A-S) et l'utilisation du DEA</div>
+<div class="wi">📌 <strong>Rappel :</strong> Cette formation constitue le volet théorique. L'habilitation effective sera formalisée par votre employeur dans un dossier signé, précisant les installations et interventions pour lesquelles vous êtes habilité(e).</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('q10b')">✅ J'ai tout lu — Passer au quiz final</button></div>
+</div>
+<div class="pnav" id="pnav-10b">
+<button class="bpg" id="prev-10b" onclick="chPg('10b',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-10b"></div>
+<button class="bpg" id="next-10b" onclick="chPg('10b',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="q10b" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 2/2 ✨ Dernière question</h3>
+<div class="qq">Un technicien BA4 constate qu'une machine est en panne. De sa propre initiative, il ouvre le coffret électrique pour identifier le problème, en portant ses gants isolants. Cette action est-elle autorisée ?</div>
+<div class="opts" id="o10b"></div>
+<div id="f10b" class="fb"></div>
+<button class="bn" id="n10b" onclick="showAttestation()">🎓 Obtenir mon attestation →</button>
+<button class="br2" id="r10b" onclick="goTo('s10b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== ATTESTATION ===== -->
+<div id="sa" class="sc">
+<div class="aw">
+<div class="ah"><div class="bi">🏅</div><h2>ATTESTATION DE SUIVI DE FORMATION</h2><p>Formation à l'Habilitation Électrique — Niveau BA4 — Personne Avertie</p></div>
+<hr class="ar">
+<div class="af"><label>Nom et prénom du participant</label><input type="text" id="att-nom" placeholder="Nom Prénom" oninput="updA()"></div>
+<div class="af"><label>Fonction / Service</label><input type="text" id="att-fn" placeholder="Ex. : Agent technique — Maintenance" oninput="updA()"></div>
+<div class="af"><label>Lieu de travail / Site</label><input type="text" id="att-lieu" placeholder="Ex. : Circus Casino Resort Namur" oninput="updA()"></div>
+<hr class="ar">
+<div class="ac">
+<p>Je soussigné(e), <strong id="pn">___________________________</strong>, exerçant la fonction de <strong id="pfn">_______________</strong> sur le site <strong id="plieu">_______________</strong>, atteste avoir suivi et validé l'intégralité de la <strong>Formation à l'Habilitation Électrique BA4</strong> comprenant 10 chapitres et 20 évaluations, conformément aux :</p>
+<ul style="margin:8px 0 10px 18px;font-size:.84rem">
+<li>Code du Bien-Être au Travail — Livre III, Titre 2, Chapitre VI</li>
+<li>A.R. du 08/09/2019 — RGIE Livres 1, 2 et 3</li>
+<li>A.R. du 10 mars 1981 relatif au Règlement Général sur les Installations Électriques</li>
+</ul>
+<p style="margin-top:10px"><strong>Compétences acquises :</strong></p>
+<div class="ci"><span class="ck">✅</span> Habilitation BA4 et réglementation belge (RGIE, Code du Bien-Être)</div>
+<div class="ci"><span class="ck">✅</span> Grandeurs électriques fondamentales, loi d'Ohm, domaines de tension</div>
+<div class="ci"><span class="ck">✅</span> Risques électriques : contacts directs, indirects, tension de pas, arcs</div>
+<div class="ci"><span class="ck">✅</span> Effets physiologiques du courant — seuils de danger — résistance cutanée BB1/BB2/BB3</div>
+<div class="ci"><span class="ck">✅</span> Protection collective : IP, DDR, TBTS, schémas TT/IT/TN, classes de matériel</div>
+<div class="ci"><span class="ck">✅</span> Organisation des travaux : chaîne de responsabilité CIE / CT / exécutants</div>
+<div class="ci"><span class="ck">✅</span> Consignation : les 7 étapes du travail hors tension — procédure VAT</div>
+<div class="ci"><span class="ck">✅</span> EPI électriques : gants, outillage isolé, vérificateur de tension</div>
+<div class="ci"><span class="ck">✅</span> Conduite à tenir en cas d'accident : P-A-S — DEA — numéros d'urgence</div>
+<p style="margin-top:10px"><strong>Limites de la qualification BA4 rappelées :</strong></p>
+<div class="ii"><span class="cx">🚫</span> Ne pas intervenir seul sur une installation électrique sans surveillance BA5</div>
+<div class="ii"><span class="cx">🚫</span> Ne pas ouvrir les enveloppes de protection des parties actives</div>
+<div class="ii"><span class="cx">🚫</span> Ne pas effectuer de travaux sous tension (réservés aux BA5)</div>
+<div class="ii"><span class="cx">🚫</span> Ne pas dépasser les limites définies dans le dossier d'habilitation personnel</div>
+</div>
+<hr class="ar">
+<div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin-top:4px">
+<div style="flex:1;min-width:160px">
+<div style="font-size:.77rem;color:#546E7A;font-weight:600;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px">Date de formation</div>
+<div id="dat" style="font-size:.9rem;color:#263238;border-bottom:1px solid #CFD8DC;padding-bottom:4px"></div>
+</div>
+<div class="sff" style="flex:2;min-width:200px">
+<p>Signature du participant</p>
+<div class="sl"></div>
+<div class="sh2">Signer manuellement à l'impression</div>
+</div>
+</div>
+<button class="bpr" id="bpr" onclick="window.print()" disabled>🖨️ Imprimer l'attestation</button>
+</div>
+</div>
+
+</div><!-- /app -->
+
+<script>
+const Q={
+'q1a':{c:0,ok:"✅ Correct ! La BA4 est une personne AVERTIE des risques, surveillée en permanence par un BA5 (qualifiée). La BA5 peut travailler de façon autonome et peut habiliter d'autres personnes.",ko:"❌ Incorrect. La BA4 (personne avertie) doit être surveillée en permanence par une BA5 (qualifiée). Elle ne peut pas travailler seule.",o:["La BA4 est une personne avertie surveillée en permanence par un BA5, tandis que la BA5 est qualifiée et peut travailler de façon autonome","La BA4 peut travailler seule sur les installations BT 230V, la BA5 est réservée aux travaux haute tension uniquement","La BA4 réalise les travaux mécaniques à proximité, la BA5 effectue exclusivement les travaux purement électriques","BA4 et BA5 désignent le même niveau de compétence avec des domaines d'application distincts selon le type d'installation"]},
+'q1b':{c:2,ok:"✅ Correct ! La durée de validité est un élément obligatoire du dossier — sans date de validité, l'habilitation n'a pas de cadre temporel et ne peut être réévaluée périodiquement.",ko:"❌ Incorrect. Le dossier doit contenir : nom du travailleur, code attribué, installations concernées, interventions autorisées et DURÉE DE VALIDITÉ.",o:["Le numéro de registre national et les coordonnées personnelles complètes du travailleur","La liste exhaustive de chaque outil que le travailleur est autorisé à manipuler sur site","La durée de validité de la compétence attribuée, qui définit la période d'habilitation","Le nombre d'années d'expérience préalable dans le domaine électrique"]},
+'q2a':{c:1,ok:"✅ Correct ! I = U/R = 230/50 = 4,6 A. Loi d'Ohm : U = R × I, donc I = U/R.",ko:"❌ Incorrect. Appliquez la loi d'Ohm : I = U / R = 230 / 50 = 4,6 A.",o:["11 500 A (erreur : 230 × 50 au lieu de 230 / 50)","4,6 A — application correcte : I = U/R = 230/50","0,22 A (erreur : fraction inversée 50/230)","280 A (erreur : addition au lieu de division)"]},
+'q2b':{c:0,ok:"✅ Correct ! 400 V CA est compris entre 50 V et 500 V → Basse Tension 1ère catégorie selon le RGIE. C'est le domaine des installations industrielles courantes en Belgique.",ko:"❌ Incorrect. 400 V CA se situe entre 50 V et 500 V → Basse Tension 1ère catégorie. Relisez le tableau des domaines de tension.",o:["Basse Tension 1ère catégorie (50V < U ≤ 500V CA) — domaine des installations industrielles courantes","Très Basse Tension (U ≤ 50V CA) — le 400V dépasse largement cette limite","Basse Tension 2ème catégorie (500V < U ≤ 1000V CA) — le 400V n'atteint pas ce domaine","Haute Tension 1ère catégorie — réservée aux tensions supérieures à 1000V CA"]},
+'q3a':{c:2,ok:"✅ Correct ! Un contact direct est le contact physique avec les parties ACTIVES (sous tension) : fils nus, bornes accessibles, jeux de barres…",ko:"❌ Incorrect. Contact DIRECT = contact avec les parties actives (sous tension). Contact INDIRECT = contact avec des masses métalliques accidentellement sous tension.",o:["Le contact entre deux conducteurs actifs d'un même circuit électrique fermé","Le contact avec la carcasse métallique d'un appareil mise accidentellement sous tension par défaut (c'est un contact INDIRECT)","Le contact physique d'une personne avec les parties actives sous tension d'une installation (fil nu, bornes, jeux de barres)","Le contact via le sol lors de l'écoulement d'un courant de défaut (tension de pas)"]},
+'q3b':{c:3,ok:"✅ Correct ! La tension de pas est la différence de potentiel entre deux points du sol lors d'un courant de défaut. Conduite correcte : NE PAS COURIR — sauter à pieds joints ou faire de très petits pas.",ko:"❌ Incorrect. La tension de pas est due au gradient de potentiel dans le sol. Ne pas courir ! Sauter à pieds joints ou faire de très petits pas pour réduire l'écartement entre les pieds.",o:["La tension maximale admissible dans un local électrique pour marcher sans EPI isolants","La tension mesurée sur le conducteur PE lors d'un court-circuit phase-terre","La tension de sécurité spécifique aux locaux humides selon le code BB2","La différence de potentiel entre les deux pieds lors d'un courant de défaut dans le sol — conduite : sauter à pieds joints, NE PAS COURIR"]},
+'q4a':{c:1,ok:"✅ Correct ! À partir de 75-100 mA de courant alternatif (50 Hz), le risque de fibrillation ventriculaire est très élevé — cause de 80% des décès par électrisation.",ko:"❌ Incorrect. Le seuil de fibrillation ventriculaire est 75-100 mA. À 10 mA on atteint le non-lâcher, à 30 mA la paralysie respiratoire. Relisez le tableau.",o:["À partir de 5 000 mA (5A) — seuil de tétanisation cardiaque par arrêt direct","À partir de 75-100 mA — seuil de fibrillation ventriculaire, cause de 80% des décès","À partir de 10 mA — seuil de non-lâcher (tétanisation musculaire)","À partir de 30 mA — seuil de paralysie respiratoire progressive"]},
+'q4b':{c:2,ok:"✅ Correct ! BB2 (peau mouillée) → tension limite CA = 25 V. BB1 (peau sèche) → 50 V. BB3 (immergée) → 12 V.",ko:"❌ Incorrect. Relisez le tableau : BB2 (peau mouillée) = 25 V CA maximum — deux fois moins que pour la peau sèche (BB1 = 50 V).",o:["50 V CA — tension limite pour peau sèche (BB1), pas pour peau mouillée","12 V CA — tension limite pour peau immergée dans l'eau (BB3)","25 V CA — tension limite spécifique à la peau mouillée (BB2)","75 V CC — tension limite courant continu non lissé applicable en BB1"]},
+'q5a':{c:3,ok:"✅ Correct ! Pour résister aux jets d'eau directs (nettoyage au jet), le 2ème chiffre IP doit être au minimum 5 (jets d'eau). Avec une protection poussière (1er chiffre 5), on obtient IP55 au minimum.",ko:"❌ Incorrect. Un jet d'eau direct correspond au 2ème chiffre 5 de l'IP. Il faut donc au minimum IP_5, soit IP55 avec protection poussière.",o:["IP20 — protège contre les doigts mais pas du tout contre les liquides","IP44 — protège contre les projections mais pas contre les jets directs d'eau au nettoyage","IP67 — protection de submersion, surdimensionné et non nécessaire pour ce cas","IP55 — protégé contre les poussières (1er chiffre 5) et contre les jets d'eau directs (2ème chiffre 5)"]},
+'q5b':{c:0,ok:"✅ Correct ! Le DDR 30 mA protège les personnes car son seuil est inférieur au seuil de fibrillation ventriculaire (~75-100 mA) et son déclenchement en < 30 ms limite la durée d'exposition.",ko:"❌ Incorrect. Le seuil 30 mA est celui de la protection des personnes, car inférieur au seuil de fibrillation (~75 mA) avec déclenchement ultra-rapide (< 30 ms).",o:["30 mA — protection des personnes : inférieur au seuil de fibrillation et déclenchement en < 30 ms","300 mA — protection incendie, pas la protection directe des personnes","500 mA — seuil industriel pour la protection des installations","10 mA — seuil ultra-sensible réservé aux zones médicales, pas aux locaux ordinaires"]},
+'q6a':{c:2,ok:"✅ Correct ! Dans le schéma IT, la source est ISOLÉE de la terre. Au 1er défaut, le courant de défaut est pratiquement nul (pas de boucle complète) → pas de coupure. Le CPI alarme pour intervention.",ko:"❌ Incorrect. Dans le schéma IT, la source est ISOLÉE de la terre. Au 1er défaut, pas de boucle de courant → pas de coupure. Le CPI détecte et alarme.",o:["Les masses sont reliées au neutre de la source, limitant le courant de défaut à un niveau acceptable","Des DDR hypersensibles (10 mA) détectent le défaut et le signalent sans couper l'alimentation","La source est isolée de la terre : au 1er défaut, le courant est pratiquement nul et l'alimentation est maintenue, le CPI alarme","Des fusibles ultra-rapides limitent la durée du défaut à quelques microsecondes"]},
+'q6b':{c:1,ok:"✅ Correct ! Classe II = double isolation ou isolation renforcée + masses NON reliées à la terre. Symbole double carré □□. Fiche sans broche de terre.",ko:"❌ Incorrect. Classe II = double isolation + masses NON reliées à la terre. Classe I = isolation principale + masse à la terre. Ne pas confondre.",o:["Une isolation principale et un conducteur PE (vert/jaune) reliant les masses à la terre","Une double isolation ou isolation renforcée, masses non reliées à la terre, symbolisé par le double carré □□","Une alimentation obligatoire en TBTS (≤ 50V CA) avec transformateur de séparation","Un DDR 30 mA intégré qui coupe automatiquement en cas de défaut d'isolation"]},
+'q7a':{c:3,ok:"✅ Correct ! C'est le CIE (Chargé de l'Installation Électrique, BA5) qui délivre l'autorisation de travail au Chargé des Travaux, après avoir mis l'installation en sécurité.",ko:"❌ Incorrect. C'est le CIE (Chargé de l'Installation Électrique) qui donne l'autorisation — pas le CT ni l'employeur directement. Relisez la chaîne de responsabilité.",o:["L'exécutant BA4 lui-même, après avoir évalué visuellement les conditions de sécurité","L'employeur ou le chef d'établissement, qui signe l'autorisation au cas par cas","Le Chargé des Travaux (CT) qui autorise ses exécutants à entrer dans la zone","Le Chargé de l'Installation Électrique (CIE) qui délivre l'autorisation de travail au Chargé des Travaux"]},
+'q7b':{c:0,ok:"✅ Correct ! En cas d'orage, les activités doivent CESSER IMMÉDIATEMENT et le CIE doit être informé. C'est une obligation réglementaire, pas une recommandation.",ko:"❌ Incorrect. En cas d'orage : ARRÊT IMMÉDIAT des activités et information au CIE. Obligation réglementaire absolue.",o:["Cesser immédiatement toutes les activités et informer le Chargé de l'Installation Électrique","Continuer avec les EPI anti-foudre réglementaires jusqu'à la fin de la tâche en cours","Réduire les activités à 50% et éviter uniquement les zones extérieures découvertes","Demander l'avis du Chargé des Travaux qui évalue au cas par cas selon la gravité de l'orage"]},
+'q8a':{c:2,ok:"✅ Correct ! L'étape 4 est la VAT (Vérification de l'Absence de Tension). Elle doit être réalisée APRÈS le verrouillage (pour confirmer la coupure) et AVANT toute intervention.",ko:"❌ Incorrect. Après le verrouillage (étape 3), vient la VAT (étape 4). La mise à la terre ne vient qu'en étape 5, APRÈS la VAT. L'ordre est impératif.",o:["La mise à la terre et en court-circuit (étape 5) pour empêcher toute remontée de tension","Le balisage de la zone de travail (étape 6) pour signaler le chantier aux autres travailleurs","La vérification de l'absence de tension (VAT, étape 4) sur tous les conducteurs actifs avec un appareil homologué","La remise en service partielle pour tester l'efficacité du verrouillage effectué"]},
+'q8b':{c:1,ok:"✅ Correct ! Le BA4 doit S'ARRÊTER et ALERTER immédiatement le Chargé des Travaux. Il ne prend aucune initiative en matière de sécurité électrique.",ko:"❌ Incorrect. Le BA4 ne prend JAMAIS d'initiative face à un danger électrique. Il s'arrête et alerte immédiatement le CT.",o:["Résoudre lui-même la situation en appliquant ses connaissances BA4 et les EPI disponibles","S'arrêter immédiatement, quitter la zone si le danger est immédiat, et alerter le CT sans prendre d'initiative","Continuer les travaux en documentant soigneusement le danger pour le rapport de fin de journée","Évacuer seul l'intégralité du bâtiment et couper l'alimentation générale au tableau principal"]},
+'q9a':{c:0,ok:"✅ Correct ! Les gants isolants ont une date de péremption et des tests diélectriques périodiques obligatoires. Inspection visuelle + test gonflage avant chaque usage est non négociable.",ko:"❌ Incorrect. Les gants ont une date de péremption stricte et nécessitent des tests diélectriques réguliers. Inspection visuelle + test gonflage avant chaque usage obligatoire.",o:["Ils doivent être inspectés visuellement (test gonflage) avant chaque usage et ne jamais dépasser leur date de péremption et test diélectrique","Ils peuvent être utilisés indéfiniment si aucune perforation n'est visible à l'œil nu","Un seul modèle universel couvre toutes les tensions de 0V à 36kV","Stockés dans leur boîte d'origine intacte, ils ne nécessitent aucune vérification avant usage"]},
+'q9b':{c:3,ok:"✅ Correct ! Tous les bijoux et éléments métalliques conducteurs doivent être RETIRÉS. Ils peuvent créer des courts-circuits, concentrer l'énergie ou initier des arcs électriques.",ko:"❌ Incorrect. Les bijoux conducteurs DOIVENT être retirés — pas couverts, pas déplacés. Un bracelet ou une bague peut créer un arc et provoquer des brûlures graves.",o:["Les couvrir entièrement avec du ruban isolant épais pour les isoler électriquement","Les regrouper du côté de la main non dominante pour réduire le risque de contact","Vérifier qu'ils ne sont pas en métal conducteur avant de commencer les travaux","Les retirer entièrement : montres, bracelets, bagues, chevalières, chaînes et tout élément métallique"]},
+'q10a':{c:2,ok:"✅ Correct ! La PREMIÈRE action est PROTÉGER : couper l'alimentation électrique AVANT tout contact avec la victime. Toucher une victime encore sous tension fait du sauveteur une deuxième victime.",ko:"❌ Incorrect. Avant TOUT contact avec la victime : COUPER LE COURANT. C'est la règle absolue. Un sauveteur qui touche une victime encore en contact devient lui-même victime.",o:["Appeler immédiatement le 100 en décrivant la situation avant toute autre action","Saisir la victime par les épaules pour l'éloigner de l'installation en criant au secours","Couper immédiatement l'alimentation électrique avant tout contact avec la victime (P = Protéger)","Commencer la RCP immédiatement pour maximiser les chances de survie de la victime"]},
+'q10b':{c:1,ok:"✅ Correct ! Non, un BA4 n'est PAS autorisé à ouvrir un coffret électrique de sa propre initiative, même avec des EPI. Ouvrir une enveloppe est réservé aux BA5 avec autorisation du CIE.",ko:"❌ Incorrect. Un BA4 ne peut JAMAIS ouvrir une enveloppe de protection de sa propre initiative. Cette action est réservée aux BA5 avec autorisation du CIE. Les EPI ne confèrent pas ce droit.",o:["Oui, car les gants isolants lui confèrent le droit d'accéder aux parties actives BT en toute sécurité","Non, car ouvrir une enveloppe de protection dépasse les attributions BA4 — il doit signaler la panne et appeler un BA5","Oui, uniquement pour les pannes sur installations BT 230V à condition d'être accompagné d'un collègue","Oui, si le circuit a été mis hors tension via l'interrupteur principal de la machine avant l'ouverture"]}
+};
+
+// ── PAGE SYSTEM ──
+const PS={};
+function initPg(id){
+  if(PS[id])return;
+  const pgs=document.querySelectorAll('#s'+id+' .pg');
+  PS[id]={cur:0,tot:pgs.length};
+  const dc=document.getElementById('dots-'+id);
+  if(dc){dc.innerHTML='';for(let i=0;i<pgs.length;i++){const d=document.createElement('button');d.className='dot'+(i===0?' active':'');d.onclick=()=>jmpPg(id,i);dc.appendChild(d);}}
+  updPnav(id);
+}
+function chPg(id,dir){
+  const s=PS[id]; if(!s)return;
+  const ni=s.cur+dir; if(ni<0||ni>=s.tot)return;
+  jmpPg(id,ni);
+}
+function jmpPg(id,idx){
+  const s=PS[id];
+  const pgs=document.querySelectorAll('#s'+id+' .pg');
+  pgs[s.cur].classList.remove('active');
+  s.cur=idx;
+  pgs[s.cur].classList.add('active');
+  updPnav(id);
+  document.querySelector('#s'+id+' .sh').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function updPnav(id){
+  const s=PS[id];
+  const pv=document.getElementById('prev-'+id);
+  const nx=document.getElementById('next-'+id);
+  const dots=document.querySelectorAll('#dots-'+id+' .dot');
+  if(pv)pv.disabled=s.cur===0;
+  if(nx){if(s.cur===s.tot-1){nx.textContent='— Fin de section';nx.disabled=true;}else{nx.textContent='Suivant →';nx.disabled=false;}}
+  dots.forEach((d,i)=>d.classList.toggle('active',i===s.cur));
+}
+
+// ── NAVIGATION ──
+let done=0;
+function goTo(id){
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.add('active');
+  if(id.startsWith('s')&&id!='sw'&&id!='sa'){
+    const sid=id.slice(1);
+    initPg(sid);
+    const s=PS[sid];
+    if(s&&s.cur!==0)jmpPg(sid,0);
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function unlockQuiz(qid){
+  done++;updPrg();
+  goTo(qid);renderQ(qid);
+}
+function updPrg(){
+  const p=Math.round(done/20*100);
+  document.getElementById('pf').style.width=p+'%';
+  document.getElementById('pl').textContent='Progression : '+done+' / 20 sections';
+}
+
+// ── QUIZ ENGINE ──
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function renderQ(qid){
+  const q=Q[qid];const sfx=qid.slice(1);
+  const ct=document.getElementById('o'+sfx);
+  const fb=document.getElementById('f'+sfx);
+  const nx=document.getElementById('n'+sfx);
+  const rt=document.getElementById('r'+sfx);
+  ct.innerHTML='';fb.className='fb';fb.textContent='';
+  if(nx)nx.classList.remove('vis');if(rt)rt.classList.remove('vis');
+  shuf(q.o.map((t,i)=>({t,i}))).forEach(({t,i})=>{
+    const b=document.createElement('button');b.className='ob';b.textContent=t;
+    b.onclick=()=>chkA(q,i,b,ct,fb,nx,rt);ct.appendChild(b);
+  });
+}
+function chkA(q,chosen,btn,ct,fb,nx,rt){
+  ct.querySelectorAll('.ob').forEach(b=>b.disabled=true);
+  if(chosen===q.c){
+    btn.classList.add('correct');fb.className='fb correct';fb.textContent=q.ok;
+    done++;updPrg();if(nx)nx.classList.add('vis');
+  }else{
+    btn.classList.add('wrong');
+    ct.querySelectorAll('.ob').forEach(b=>{if(b.textContent===q.o[q.c])b.classList.add('correct');});
+    fb.className='fb wrong';fb.textContent=q.ko;if(rt)rt.classList.add('vis');
+  }
+}
+
+// ── ATTESTATION ──
+function showAttestation(){
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sa').classList.add('active');
+  const now=new Date();
+  document.getElementById('dat').textContent=now.toLocaleDateString('fr-BE',{day:'2-digit',month:'long',year:'numeric'});
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function updA(){
+  const n=document.getElementById('att-nom').value.trim();
+  const f=document.getElementById('att-fn').value.trim();
+  const l=document.getElementById('att-lieu').value.trim();
+  document.getElementById('pn').textContent=n||'___________________________';
+  document.getElementById('pfn').textContent=f||'_______________';
+  document.getElementById('plieu').textContent=l||'_______________';
+  document.getElementById('bpr').disabled=!(n.length>2&&f.length>1&&l.length>1);
+}
+</script>
+</body>
+</html>
