@@ -139,7 +139,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#F5F7FA;color:#263238;mi
 <div id="hdr">
   <span class="bolt">⚡</span>
   <div><h1>Formation BA4 — Habilitation Électrique</h1><p>A.R. 10 mars 1981 — RGIE Livres 1, 2 &amp; 3 — Code du Bien-Être au travail</p></div>
-  <div id="pbw"><div id="pl">Progression : 0 / 40 étapes (0%)</div><div id="pb"><div id="pf"></div></div></div>
+  <div id="pbw"><div id="pl">Progression : 0 / 46 étapes (0%)</div><div id="pb"><div id="pf"></div></div></div>
 </div>
 <div id="app">
 
@@ -152,8 +152,8 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#F5F7FA;color:#263238;mi
 <div class="ti"><span class="tn">📖</span> Chaque chapitre se lit page par page (boutons « Suivant / Précédent » en bas)</div>
 <div class="ti"><span class="tn">❓</span> Après chaque partie, une question vérifie que l'essentiel est acquis</div>
 <div class="ti"><span class="tn">🔄</span> Une mauvaise réponse vous renvoie simplement à la lecture — rien n'est pénalisant</div>
-<div class="ti"><span class="tn">🏅</span> Après les 20 questions, vous imprimez votre attestation de suivi</div>
-<div class="ti"><span class="tn">⏱️</span> Durée totale : environ 60 à 90 minutes — vous pouvez faire des pauses à tout moment</div>
+<div class="ti"><span class="tn">🏅</span> Après les 23 questions, vous imprimez votre attestation de suivi</div>
+<div class="ti"><span class="tn">⏱️</span> Durée totale : environ 75 à 105 minutes — vous pouvez faire des pauses à tout moment</div>
 </div>
 <div class="toc"><h3>🔤 Les abréviations que vous allez rencontrer</h3>
 <p style="font-size:.84rem;color:#546E7A;margin-bottom:10px">Le monde électrique adore les sigles. Voici les principaux — <strong>inutile de les mémoriser maintenant</strong> : chacun sera réexpliqué au moment où vous le rencontrerez. Ce tableau est là pour y revenir en cas de doute.</p>
@@ -169,7 +169,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#F5F7FA;color:#263238;mi
 <tr><td><strong>BT / HT</strong></td><td>Basse / Haute Tension</td><td>BT : prises et machines courantes (230/400 V). HT : cabines et postes de transformation (milliers de volts).</td></tr>
 </table>
 </div>
-<div class="toc"><h3>📋 Programme — 10 chapitres</h3>
+<div class="toc"><h3>📋 Programme — 11 chapitres</h3>
 <div class="ti"><span class="tn">1</span> Habilitation — définitions et codification réglementaire</div>
 <div class="ti"><span class="tn">2</span> Notions d'électricité — grandeurs et loi d'Ohm</div>
 <div class="ti"><span class="tn">3</span> Les risques électriques — types de contacts</div>
@@ -179,7 +179,8 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#F5F7FA;color:#263238;mi
 <div class="ti"><span class="tn">7</span> Les travaux aux installations électriques</div>
 <div class="ti"><span class="tn">8</span> Consignation — travail hors tension</div>
 <div class="ti"><span class="tn">9</span> Équipements de protection individuelle</div>
-<div class="ti"><span class="tn">10</span> Conduite à tenir en cas d'accident</div>
+<div class="ti"><span class="tn">10</span> Batteries lithium et panneaux photovoltaïques</div>
+<div class="ti"><span class="tn">11</span> Conduite à tenir en cas d'accident</div>
 </div>
 <div class="wb">⚠️ <strong>Important :</strong> Une mauvaise réponse vous renvoie à la section correspondante pour relecture. Vous devez obtenir la bonne réponse avant de continuer.</div>
 <button class="bst" onclick="goTo('s1a')">Commencer la formation →</button>
@@ -1430,13 +1431,266 @@ Cette séquence en 3 temps garantit que le VAT n'était pas défaillant pendant 
 <div class="qq">Lors de toute opération électrique, que doit obligatoirement faire le travailleur concernant ses bijoux ?</div>
 <div class="opts" id="o9b"></div>
 <div id="f9b" class="fb"></div>
-<button class="bn" id="n9b" onclick="goTo('s10a')">Continuer →</button>
+<button class="bn" id="n9b" onclick="goTo('sbat1')">Continuer →</button>
 <button class="br2" id="r9b" onclick="goTo('s9b')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH10 BATTERIES — PARTIE 1 ===== -->
+<div id="sbat1" class="sc">
+<div class="sh"><div class="cn">10</div><div><h2>Batteries lithium et panneaux photovoltaïques</h2><div class="sub">Partie 1/3 — Le danger et la prévention</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-bat1-1">
+<h3>Pourquoi une batterie qui brûle n'est pas un feu ordinaire</h3>
+<p>Téléphones, ordinateurs portables, talkies-walkies, outils sans fil, batteries de secours (powerbanks), cigarettes électroniques, trottinettes et vélos électriques : presque tous fonctionnent avec une batterie <strong>lithium-ion</strong>. Elle stocke beaucoup d'énergie dans un petit volume — c'est son intérêt, et c'est aussi son danger.</p>
+<h4>L'emballement thermique</h4>
+<p>Quand une cellule est abîmée (chute, choc, écrasement), surchargée, mal fabriquée ou exposée à la chaleur, un court-circuit peut se produire <em>à l'intérieur</em> de la batterie. La cellule chauffe ; au-delà d'un certain seuil, ses composants se décomposent et produisent eux-mêmes de la chaleur, des gaz inflammables… et de l'oxygène. La réaction s'entretient alors toute seule : c'est l'<strong>emballement thermique</strong>.</p>
+<div class="svgw">
+<svg viewBox="0 0 330 330" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+<defs><marker id="abat" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker></defs>
+<rect width="330" height="330" fill="#FAFAFA" rx="8"/>
+<rect x="10" y="10" width="250" height="52" rx="9" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="135" y="31" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">1. Une cellule chauffe</text>
+<text x="135" y="51" text-anchor="middle" font-size="12.5" fill="#37474F">choc, surcharge, chaleur, défaut</text>
+<line x1="135" y1="62" x2="135" y2="82" stroke="#C62828" stroke-width="2.5" marker-end="url(#abat)"/>
+<rect x="10" y="86" width="250" height="52" rx="9" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="135" y="107" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">2. Court-circuit interne</text>
+<text x="135" y="127" text-anchor="middle" font-size="12.5" fill="#37474F">la température grimpe très vite</text>
+<line x1="135" y1="138" x2="135" y2="158" stroke="#C62828" stroke-width="2.5" marker-end="url(#abat)"/>
+<rect x="10" y="162" width="250" height="52" rx="9" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="135" y="183" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">3. Décomposition</text>
+<text x="135" y="203" text-anchor="middle" font-size="12.5" fill="#37474F">gaz inflammables + oxygène</text>
+<line x1="135" y1="214" x2="135" y2="234" stroke="#C62828" stroke-width="2.5" marker-end="url(#abat)"/>
+<rect x="10" y="238" width="250" height="52" rx="9" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="135" y="259" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">4. Feu</text>
+<text x="135" y="279" text-anchor="middle" font-size="12.5" fill="#37474F">il chauffe la cellule voisine</text>
+<path d="M260,264 H300 V112 H266" fill="none" stroke="#C62828" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#abat)"/>
+<text x="300" y="196" text-anchor="middle" font-size="18">🔁</text>
+<text x="165" y="316" text-anchor="middle" font-size="13" font-weight="bold" fill="#C62828">🔥 La boucle s'entretient seule, sans air</text>
+</svg>
+<div class="svgc">L'emballement thermique : une boucle qui se nourrit d'elle-même, cellule après cellule</div>
+</div>
+<div class="db">🔥 <strong>Ce que cela change :</strong><br>
+• <strong>Le feu s'auto-alimente</strong> : il n'a pas besoin de l'air ambiant. Couvrir, étouffer ou fermer un couvercle ne l'arrête pas.<br>
+• <strong>Il se propage</strong> : une cellule en feu chauffe ses voisines, qui s'emballent à leur tour — avec des jets de flammes, des projections et parfois des explosions.<br>
+• <strong>Il repart</strong> : éteindre les flammes ne stoppe pas forcément la réaction. Une batterie peut se rallumer des heures, voire des jours plus tard.<br>
+• <strong>Il va vite</strong> : entre la première fumée et l'embrasement, il peut s'écouler moins d'une minute.</div>
+<div class="nc">🧠 <strong>En clair :</strong> un feu ordinaire ressemble à un feu de camp — retirez le bois ou l'air, il s'éteint. Une batterie en emballement ressemble plutôt à une rangée de pétards serrés les uns contre les autres : chacun contient tout ce qu'il faut pour brûler, et chacun allume le suivant. Pour arrêter la chaîne, il faut refroidir massivement et longtemps — c'est le travail des pompiers.</div>
+</div>
+<div class="pg" id="pg-bat1-2">
+<h3>La charge : le moment le plus risqué</h3>
+<p>Beaucoup d'incendies de batteries démarrent pendant la charge ou juste après. Quelques règles simples suppriment l'essentiel du risque.</p>
+<div class="sb">✅ <strong>Charger sans danger :</strong><br>
+• <strong>Jamais d'appareil en charge sans surveillance</strong> : pas pendant la nuit, pas en quittant le bureau ou le site.<br>
+• Utiliser le <strong>chargeur d'origine</strong> ou un chargeur certifié pour cet appareil — jamais un chargeur « universel » bon marché ou de provenance douteuse.<br>
+• Charger sur une <strong>surface dure et incombustible</strong>, loin de ce qui brûle (papiers, cartons, textiles, rideaux) — jamais sur un lit, un canapé, un siège ou sous un coussin.<br>
+• Ne pas charger dans un couloir, un escalier ou près d'une sortie : si la batterie s'enflamme, elle ne doit pas bloquer l'évacuation.<br>
+• Débrancher dès que la charge est terminée.<br>
+• Ne pas charger une batterie très froide (sous 0 °C) ou brûlante : la laisser revenir à température ambiante.<br>
+• Ne jamais charger une batterie qui a chuté, gonflé ou qui chauffe anormalement.</div>
+<h4>Des prises adaptées</h4>
+<p>Un chargeur de vélo ou de trottinette reste branché plusieurs heures. Il doit être raccordé <strong>directement à une prise murale en bon état</strong>.</p>
+<div class="wi">⚡ <strong>À éviter :</strong><br>
+• les multiprises branchées en cascade les unes dans les autres ;<br>
+• les adaptateurs empilés, les adaptateurs de voyage, les prises abîmées, noircies ou qui bougent dans le mur ;<br>
+• les rallonges enroulées : un enrouleur doit être <strong>entièrement déroulé</strong>, sinon le câble chauffe ;<br>
+• les prises extérieures ou en local humide sans protection adaptée (indice IP, chapitre 5).</div>
+<div class="nc">🧠 <strong>En clair :</strong> une prise ou un chargeur qui chauffe, sent le brûlé ou dont le plastique a jauni est un signal d'alarme. On débranche et on signale — on ne « surveille pas pour voir ».</div>
+</div>
+<div class="pg" id="pg-bat1-3">
+<h3>Trottinettes, vélos et autres engins électriques</h3>
+<p>Une batterie de trottinette ou de vélo électrique contient autant d'énergie que plusieurs dizaines de batteries de téléphone. Son incendie est violent, très enfumé et difficile à maîtriser.</p>
+<div class="db">🚫 <strong>Ne jamais garer ni charger un engin électrique :</strong><br>
+• dans un local technique (électrique, chaufferie, informatique), un local d'archives ou de stockage ;<br>
+• dans un couloir, une cage d'escalier, sous un escalier, devant une issue de secours ou sur un chemin d'évacuation ;<br>
+• dans un bureau ou un vestiaire fermé, sans détection incendie.</div>
+<div class="sb">✅ <strong>Uniquement à l'emplacement prévu par l'employeur</strong> pour ces engins — idéalement à l'extérieur ou dans un local ventilé, équipé d'une détection incendie et éloigné des issues. S'il n'existe pas d'emplacement prévu, demandez-le à votre responsable plutôt que d'improviser.</div>
+<h4>Ranger et utiliser les batteries</h4>
+<ul>
+<li>Ranger les batteries de rechange à l'abri de la chaleur et du soleil : pas sur un tableau de bord, pas contre un radiateur.</li>
+<li>Ne pas les laisser en vrac avec des objets métalliques (clés, pièces, outils) : leurs bornes peuvent être court-circuitées.</li>
+<li>Pour un stockage de longue durée, une charge partielle (environ la moitié) est préférable à une charge pleine.</li>
+<li>Ne jamais ouvrir, modifier ou réparer soi-même une batterie, ni utiliser une batterie de remplacement non certifiée.</li>
+</ul>
+<div class="buw"><button class="bu" onclick="unlockQuiz('qbat1')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-bat1">
+<button class="bpg" id="prev-bat1" onclick="chPg('bat1',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-bat1"></div>
+<button class="bpg" id="next-bat1" onclick="chPg('bat1',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="qbat1" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 1/3</h3>
+<div class="qq">Un collègue vient travailler en trottinette électrique. Pour la retrouver chargée le soir, il veut la brancher dans le local technique, sur une multiprise, pendant toute la journée. Que lui répondez-vous ?</div>
+<div class="opts" id="obat1"></div>
+<div id="fbat1" class="fb"></div>
+<button class="bn" id="nbat1" onclick="goTo('sbat2')">Continuer →</button>
+<button class="br2" id="rbat1" onclick="goTo('sbat1')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH10 BATTERIES — PARTIE 2 ===== -->
+<div id="sbat2" class="sc">
+<div class="sh"><div class="cn">10</div><div><h2>Batteries lithium et panneaux photovoltaïques</h2><div class="sub">Partie 2/3 — Incident batterie : la bonne attitude</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-bat2-1">
+<h3>Reconnaître les signes d'alerte</h3>
+<div class="pr">
+<div class="pc"><span class="ic">🎈</span><strong>Gonflement</strong>Boîtier déformé, écran ou coque qui se soulève</div>
+<div class="pc"><span class="ic">🌡️</span><strong>Chaleur anormale</strong>Trop chaud pour être tenu en main</div>
+<div class="pc"><span class="ic">🔊</span><strong>Bruits</strong>Sifflement, crépitement, petits claquements</div>
+</div>
+<div class="pr">
+<div class="pc"><span class="ic">👃</span><strong>Odeur</strong>Sucrée, de solvant ou de plastique brûlé</div>
+<div class="pc"><span class="ic">💨</span><strong>Fumée</strong>Blanche ou grise, même légère</div>
+<div class="pc"><span class="ic">💧</span><strong>Fuite</strong>Liquide, traces, dépôt autour de la batterie</div>
+</div>
+<h3>Si une batterie fume, siffle ou s'enflamme</h3>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Ne pas toucher, ne pas déplacer</strong>Une batterie qui fume peut s'embraser ou projeter des éléments à tout instant. Ne jamais la prendre en main pour « la sortir ».</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Couper à distance, si c'est possible sans s'approcher</strong>Interrupteur de la prise, disjoncteur du circuit au tableau, arrêt d'urgence d'une borne de recharge.</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>Faire sortir et fermer</strong>Faire sortir les personnes, puis fermer la porte du local (sans la verrouiller) pour contenir la fumée et le feu.</div></div>
+<div class="step"><div class="sn">4</div><div class="sc2"><strong>Alerter</strong>Donner l'alerte selon la procédure interne d'urgence et appeler le <strong>112</strong>. Préciser : <strong>« batterie lithium »</strong>, l'endroit exact, le type d'appareil (téléphone, trottinette…).</div></div>
+<div class="step"><div class="sn">5</div><div class="sc2"><strong>Ne pas revenir</strong>Ne pas rouvrir la porte « pour voir » : l'arrivée d'air sur les gaz accumulés peut provoquer une explosion. Attendre les secours à l'extérieur pour les guider.</div></div>
+</div>
+<div class="wi">🧯 <strong>Et l'extincteur ?</strong> Seulement sur un <strong>petit appareil</strong> (téléphone, ordinateur), <strong>au tout début</strong>, si vous avez été formé et gardez la sortie dans votre dos. Un extincteur à eau ou à mousse refroidit la batterie ; un extincteur CO2 ou à poudre éteint les flammes mais pas la réaction — la batterie peut repartir. Sur une trottinette, un vélo ou une grosse batterie : on n'attaque pas, on évacue et on alerte.</div>
+<div class="ib">💡 <strong>Cas d'un appareil qui chauffe, sans fumée ni bruit :</strong> le débrancher, le poser sur une surface incombustible loin de ce qui brûle, ne plus l'utiliser et le signaler.</div>
+</div>
+<div class="pg" id="pg-bat2-2">
+<h3>Une batterie endommagée</h3>
+<p>Une batterie qui a chuté, été écrasée, percée, mouillée ou qui a gonflé peut s'emballer plus tard — parfois plusieurs heures après le choc. Elle doit être traitée comme dangereuse, même si elle « fonctionne encore ».</p>
+<div class="steps">
+<div class="step"><div class="sn">1</div><div class="sc2"><strong>Arrêter de l'utiliser et ne plus la charger</strong>Une batterie endommagée ne se « répare » pas.</div></div>
+<div class="step"><div class="sn">2</div><div class="sc2"><strong>Ne pas la percer, l'écraser ni tenter de la dégonfler</strong>C'est précisément ce qui déclenche l'emballement.</div></div>
+<div class="step"><div class="sn">3</div><div class="sc2"><strong>L'isoler</strong>La poser sur une surface incombustible, loin de ce qui brûle — idéalement à l'extérieur ou dans le contenant prévu à cet effet sur le site. Recouvrir ses bornes de ruban adhésif isolant.</div></div>
+<div class="step"><div class="sn">4</div><div class="sc2"><strong>Signaler</strong>Prévenir votre responsable ou le service technique.</div></div>
+<div class="step"><div class="sn">5</div><div class="sc2"><strong>Ne jamais la jeter à la poubelle</strong>La déposer dans un point de collecte <strong>Bebat</strong> (piles et batteries) ou dans la filière de reprise prévue par l'employeur. Une batterie jetée dans un sac poubelle ou un conteneur à papier peut y prendre feu — y compris dans le camion ou au centre de tri.</div></div>
+</div>
+<div class="db">⚠️ Une batterie <strong>chaude, qui fume ou qui gonfle à vue d'œil</strong> n'est plus une « batterie endommagée » : c'est un incident en cours. On ne la manipule plus — on applique la page précédente.</div>
+</div>
+<div class="pg" id="pg-bat2-3">
+<h3>Les fumées : toxiques, et parfois explosives</h3>
+<p>Une batterie en emballement libère un nuage de gaz et de fumées. On y trouve notamment du <strong>fluorure d'hydrogène</strong> (très corrosif pour les yeux, la peau et les poumons), du <strong>monoxyde de carbone</strong> (inodore et asphyxiant) et des <strong>gaz inflammables</strong>.</p>
+<div class="db">☠️ <strong>Se méfier des fumées :</strong><br>
+• Ne jamais rester dans la fumée d'une batterie, même quelques secondes. À l'extérieur, se placer dos au vent.<br>
+• La fumée blanche du début n'est pas de la vapeur d'eau : c'est souvent un mélange de gaz inflammables, qui peut s'enflammer d'un coup dans un local fermé.<br>
+• Les effets du fluorure d'hydrogène peuvent apparaître <strong>plusieurs heures après</strong> (toux, gêne respiratoire, brûlures) : toute personne exposée doit voir un médecin. Centre Antipoisons : <strong>070 245 245</strong>.</div>
+<h3>Les eaux d'extinction et de rinçage</h3>
+<p>L'eau qui a servi à refroidir une batterie, ou à nettoyer la zone ensuite, emporte des fluorures, des sels de lithium et des métaux lourds (nickel, cobalt, manganèse). Elle est <strong>corrosive et toxique</strong>.</p>
+<div class="wi">💧 <strong>Après l'incident :</strong><br>
+• Ne pas marcher dans les flaques ni les toucher à mains nues.<br>
+• Ne pas les évacuer vers les égouts, les avaloirs ou un cours d'eau : signaler leur présence aux pompiers, qui décident de leur gestion.<br>
+• Les suies et les débris sont eux aussi contaminés : pas de nettoyage sans EPI adaptés (gants, protection respiratoire) ni sans l'accord du conseiller en prévention.<br>
+• Les restes de la batterie peuvent se rallumer : ils sont évacués par les pompiers ou une société spécialisée, jamais jetés.</div>
+<div class="nc">🧠 <strong>En clair :</strong> après un feu de batterie, tout ce qui a été touché par la fumée ou par l'eau d'extinction est à traiter comme un produit dangereux. On n'y touche pas avant le feu vert des pompiers ou du conseiller en prévention.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('qbat2')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-bat2">
+<button class="bpg" id="prev-bat2" onclick="chPg('bat2',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-bat2"></div>
+<button class="bpg" id="next-bat2" onclick="chPg('bat2',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="qbat2" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 2/3</h3>
+<div class="qq">Dans un bureau, l'ordinateur portable en charge d'un collègue se met à siffler et dégage une fumée blanche, sans flammes. Quelle est la bonne réaction ?</div>
+<div class="opts" id="obat2"></div>
+<div id="fbat2" class="fb"></div>
+<button class="bn" id="nbat2" onclick="goTo('sbat3')">Continuer →</button>
+<button class="br2" id="rbat2" onclick="goTo('sbat2')">🔄 Relire la section</button>
+</div></div>
+
+<!-- ===== CH10 BATTERIES — PARTIE 3 ===== -->
+<div id="sbat3" class="sc">
+<div class="sh"><div class="cn">10</div><div><h2>Batteries lithium et panneaux photovoltaïques</h2><div class="sub">Partie 3/3 — Panneaux photovoltaïques</div></div></div>
+<div class="cb">
+<span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
+<div class="pg active" id="pg-bat3-1">
+<h3>Un panneau solaire ne s'éteint pas</h3>
+<p>Un panneau photovoltaïque produit du courant <strong>dès qu'il reçoit de la lumière</strong>. Il n'a pas d'interrupteur : tant qu'il fait jour — même par temps couvert — il est sous tension. Les panneaux sont raccordés les uns aux autres, et les câbles qui descendent vers l'onduleur transportent du <strong>courant continu à plusieurs centaines de volts, jusqu'à 1 000 V</strong>.</p>
+<p>L'<strong>onduleur</strong> transforme ce courant continu en courant alternatif 230/400 V, utilisable par le bâtiment et injecté sur le réseau.</p>
+<div class="svgw">
+<svg viewBox="0 0 360 352" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+<rect width="360" height="352" fill="#FAFAFA" rx="8"/>
+<rect x="14" y="12" width="176" height="52" rx="8" fill="#FFF8E1" stroke="#C62828" stroke-width="2.5"/>
+<text x="102" y="34" text-anchor="middle" font-size="14" font-weight="bold" fill="#37474F">☀️ Panneaux</text>
+<text x="102" y="53" text-anchor="middle" font-size="12.5" fill="#37474F">produisent à la lumière</text>
+<line x1="102" y1="64" x2="102" y2="104" stroke="#C62828" stroke-width="5"/>
+<text x="198" y="80" font-size="13" font-weight="bold" fill="#C62828">Câbles courant continu</text>
+<text x="198" y="95" font-size="13" fill="#C62828">jusqu'à 1 000 V</text>
+<rect x="14" y="104" width="176" height="40" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2.5"/>
+<text x="102" y="129" text-anchor="middle" font-size="14" font-weight="bold" fill="#37474F">Sectionneur continu</text>
+<line x1="102" y1="144" x2="102" y2="178" stroke="#C62828" stroke-width="5"/>
+<rect x="14" y="178" width="176" height="52" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="2.5"/>
+<text x="102" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#37474F">Onduleur</text>
+<text x="102" y="219" text-anchor="middle" font-size="12.5" fill="#37474F">reste chargé un moment</text>
+<text x="198" y="198" font-size="13" fill="#37474F">Condensateurs :</text>
+<text x="198" y="213" font-size="13" fill="#37474F">attendre le délai</text>
+<text x="198" y="228" font-size="13" fill="#37474F">indiqué sur l'appareil</text>
+<line x1="102" y1="230" x2="102" y2="262" stroke="#1565C0" stroke-width="5"/>
+<rect x="14" y="262" width="176" height="40" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2.5"/>
+<text x="102" y="287" text-anchor="middle" font-size="14" font-weight="bold" fill="#37474F">Disjoncteur onduleur</text>
+<text x="198" y="280" font-size="13" font-weight="bold" fill="#1565C0">← Couper ici protège</text>
+<text x="198" y="295" font-size="13" font-weight="bold" fill="#1565C0">le bâtiment… seulement</text>
+<line x1="102" y1="302" x2="102" y2="318" stroke="#1565C0" stroke-width="5"/>
+<text x="102" y="334" text-anchor="middle" font-size="12.5" fill="#1565C0">→ tableau et réseau (230/400 V)</text>
+<text x="180" y="348" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#C62828">En rouge : sous tension tant qu'il fait jour</text>
+</svg>
+<div class="svgc">Couper l'onduleur ne met hors tension ni les panneaux, ni les câbles qui en descendent</div>
+</div>
+<div class="db">⚡ <strong>Couper l'onduleur</strong> (ou son disjoncteur) arrête l'alimentation du bâtiment par les panneaux. Cela <strong>ne met PAS hors tension</strong> :<br>
+• les panneaux eux-mêmes ;<br>
+• les câbles entre les panneaux et l'onduleur (côté courant continu) ;<br>
+• les batteries de stockage éventuelles.</div>
+<h4>Le courant résiduel</h4>
+<p>Même déconnecté des deux côtés, l'onduleur garde de l'énergie dans ses condensateurs pendant plusieurs minutes. Le fabricant indique sur l'appareil un temps d'attente avant toute ouverture — ouverture qui, de toute façon, n'est jamais du ressort d'un BA4.</p>
+<div class="wi">🔥 <strong>Le courant continu est plus traître :</strong> un arc électrique en courant continu ne s'éteint pas de lui-même, contrairement au courant alternatif qui repasse par zéro 100 fois par seconde. Débrancher un connecteur de câble solaire pendant que l'installation produit peut amorcer un arc qui brûle l'opérateur et met le feu.</div>
+<div class="nc">🧠 <strong>En clair :</strong> reprenez l'image de l'eau du chapitre 2. Le panneau est un robinet que le soleil ouvre tout seul. Fermer la vanne en bas (l'onduleur) protège la maison — mais le tuyau entre le robinet et la vanne reste plein et sous pression.</div>
+</div>
+<div class="pg" id="pg-bat3-2">
+<h3>Règles pratiques</h3>
+<div class="sb">✅ <strong>Un BA4 peut, si son dossier d'habilitation le prévoit :</strong><br>
+• arrêter l'installation selon la procédure affichée : d'abord le disjoncteur de l'onduleur (côté alternatif), puis le sectionneur côté continu ;<br>
+• constater et signaler un défaut : alarme de l'onduleur, panneau fissuré, câble abîmé ou tombé, odeur ou traces de brûlé.</div>
+<div class="db">🚫 <strong>Jamais :</strong><br>
+• ouvrir l'onduleur, un coffret de raccordement ou une boîte de jonction ;<br>
+• débrancher ou couper un câble ou un connecteur solaire ;<br>
+• toucher un panneau cassé ou un câble dénudé ou tombé — y compris après une tempête ou un incendie ;<br>
+• monter ou marcher sur les panneaux ;<br>
+• considérer l'installation comme hors tension parce que l'onduleur est éteint ou parce qu'il fait sombre.</div>
+<h4>En cas d'incendie dans un bâtiment équipé</h4>
+<ul>
+<li><strong>Prévenir les pompiers dès leur arrivée</strong> : présence de panneaux, emplacement de l'onduleur, des dispositifs de coupure et des éventuelles batteries de stockage.</li>
+<li>Les panneaux restent sous tension même brûlés, cassés ou tombés au sol. La nuit, un éclairage puissant (projecteurs des secours, éclairage extérieur) peut suffire à produire une tension.</li>
+<li>Ne jamais arroser soi-même des panneaux, des câbles ou un local onduleur : l'eau projetée sur des éléments sous tension conduit le courant jusqu'à vous.</li>
+</ul>
+<div class="ib">💡 Certaines installations récentes (optimiseurs, micro-onduleurs, coupure d'urgence en toiture) abaissent la tension des câbles à l'arrêt. C'est utile — mais on ne le présume jamais : seul le CIE sait ce que l'installation comporte réellement.</div>
+<h4>Et les véhicules électriques au parking ?</h4>
+<div class="wi">🚗 Même logique, en plus grand : la batterie d'une voiture électrique en feu peut brûler des heures et se rallumer. Ne jamais tenter de l'éteindre. Si la borne de recharge a un arrêt d'urgence accessible sans s'approcher du véhicule, l'actionner ; puis faire évacuer et appeler le <strong>112</strong> en précisant <strong>« véhicule électrique »</strong>.</div>
+<div class="buw"><button class="bu" onclick="unlockQuiz('qbat3')">✅ J'ai tout lu — Passer au quiz</button></div>
+</div>
+<div class="pnav" id="pnav-bat3">
+<button class="bpg" id="prev-bat3" onclick="chPg('bat3',-1)" disabled>← Précédent</button>
+<div class="dots" id="dots-bat3"></div>
+<button class="bpg" id="next-bat3" onclick="chPg('bat3',1)">Suivant →</button>
+</div>
+</div></div>
+
+<div id="qbat3" class="sc">
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 3/3</h3>
+<div class="qq">En pleine journée, un collègue a coupé le disjoncteur de l'onduleur de l'installation photovoltaïque. Il veut maintenant débrancher un connecteur sur le toit pour remplacer un panneau fissuré. Qu'en pensez-vous ?</div>
+<div class="opts" id="obat3"></div>
+<div id="fbat3" class="fb"></div>
+<button class="bn" id="nbat3" onclick="goTo('s10a')">Continuer →</button>
+<button class="br2" id="rbat3" onclick="goTo('sbat3')">🔄 Relire la section</button>
 </div></div>
 
 <!-- ===== CH10A ===== -->
 <div id="s10a" class="sc">
-<div class="sh"><div class="cn">10</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 1/2 — Séquence P-A-S et DEA</div></div></div>
+<div class="sh"><div class="cn">11</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 1/2 — Séquence P-A-S et DEA</div></div></div>
 <div class="cb">
 <span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
 <div class="pg active" id="pg-10a-1">
@@ -1503,7 +1757,7 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 </div></div>
 
 <div id="q10a" class="sc">
-<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 1/2</h3>
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 11 — Question 1/2</h3>
 <div class="qq">Vous découvrez un collègue inconscient au contact d'une installation électrique encore sous tension. Quelle est la PREMIÈRE action à effectuer ?</div>
 <div class="opts" id="o10a"></div>
 <div id="f10a" class="fb"></div>
@@ -1513,7 +1767,7 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 
 <!-- ===== CH10B ===== -->
 <div id="s10b" class="sc">
-<div class="sh"><div class="cn">10</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 2/2 — Autorisations, interdictions BA4 et récapitulatif</div></div></div>
+<div class="sh"><div class="cn">11</div><div><h2>Conduite à tenir en cas d'accident</h2><div class="sub">Partie 2/2 — Autorisations, interdictions BA4 et récapitulatif</div></div></div>
 <div class="cb">
 <span class="rb">📖 Lisez chaque page avant de passer à la suivante</span>
 <div class="pg active" id="pg-10b-1">
@@ -1545,6 +1799,7 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 • La chaîne de responsabilité et l'organisation des travaux (CIE, CT, exécutants)<br>
 • Les 7 étapes de consignation pour le travail hors tension et la procédure VAT<br>
 • L'utilisation correcte des EPI électriques<br>
+• Les risques des batteries lithium et des panneaux photovoltaïques, et la conduite à tenir en cas d'incident<br>
 • La conduite à tenir en cas d'accident électrique (P-A-S) et l'utilisation du DEA</div>
 <div class="wi">📌 <strong>Rappel :</strong> Cette formation constitue le volet théorique. L'habilitation effective sera formalisée par votre employeur dans un dossier signé, précisant les installations et interventions pour lesquelles vous êtes habilité(e).</div>
 <div class="buw"><button class="bu" onclick="unlockQuiz('q10b')">✅ J'ai tout lu — Passer au quiz final</button></div>
@@ -1557,7 +1812,7 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 </div></div>
 
 <div id="q10b" class="sc">
-<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 10 — Question 2/2 ✨ Dernière question</h3>
+<div class="qw"><h3><span class="qb">QUIZ</span> Chapitre 11 — Question 2/2 ✨ Dernière question</h3>
 <div class="qq">Un technicien BA4 constate qu'une machine est en panne. De sa propre initiative, il ouvre le coffret électrique pour identifier le problème, en portant ses gants isolants. Cette action est-elle autorisée ?</div>
 <div class="opts" id="o10b"></div>
 <div id="f10b" class="fb"></div>
@@ -1575,7 +1830,7 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 <div class="af"><label>Lieu de travail / Site</label><input type="text" id="att-lieu" placeholder="Ex. : Circus Casino Resort Namur" oninput="updA()"></div>
 <hr class="ar">
 <div class="ac">
-<p>Je soussigné(e), <strong id="pn">___________________________</strong>, exerçant la fonction de <strong id="pfn">_______________</strong> sur le site <strong id="plieu">_______________</strong>, atteste avoir suivi et validé l'intégralité de la <strong>Formation à l'Habilitation Électrique BA4</strong> comprenant 10 chapitres et 20 évaluations, conformément aux :</p>
+<p>Je soussigné(e), <strong id="pn">___________________________</strong>, exerçant la fonction de <strong id="pfn">_______________</strong> sur le site <strong id="plieu">_______________</strong>, atteste avoir suivi et validé l'intégralité de la <strong>Formation à l'Habilitation Électrique BA4</strong> comprenant 11 chapitres et 23 évaluations, conformément aux :</p>
 <ul style="margin:8px 0 10px 18px;font-size:.84rem">
 <li>Code du Bien-Être au Travail — Livre III, Titre 2, Chapitre VI</li>
 <li>A.R. du 08/09/2019 — RGIE Livres 1, 2 et 3</li>
@@ -1590,11 +1845,13 @@ Toucher une personne encore en contact électrique vous rend à votre tour victi
 <div class="ci"><span class="ck">✅</span> Organisation des travaux : chaîne de responsabilité CIE / CT / exécutants</div>
 <div class="ci"><span class="ck">✅</span> Consignation : les 7 étapes du travail hors tension — procédure VAT</div>
 <div class="ci"><span class="ck">✅</span> EPI électriques : gants, outillage isolé, vérificateur de tension</div>
+<div class="ci"><span class="ck">✅</span> Batteries lithium : emballement thermique, prévention, fumées et eaux d'extinction — photovoltaïque : tension persistante</div>
 <div class="ci"><span class="ck">✅</span> Conduite à tenir en cas d'accident : P-A-S — DEA — numéros d'urgence</div>
 <p style="margin-top:10px"><strong>Limites de la qualification BA4 rappelées :</strong></p>
 <div class="ii"><span class="cx">🚫</span> Ne pas intervenir seul sur une installation électrique sans surveillance BA5</div>
 <div class="ii"><span class="cx">🚫</span> Ne pas ouvrir les enveloppes de protection des parties actives</div>
 <div class="ii"><span class="cx">🚫</span> Ne pas effectuer de travaux sous tension (réservés aux BA5)</div>
+<div class="ii"><span class="cx">🚫</span> Ne pas intervenir sur une installation photovoltaïque (câbles, connecteurs, onduleur) : elle reste sous tension tant qu'il fait jour</div>
 <div class="ii"><span class="cx">🚫</span> Ne pas dépasser les limites définies dans le dossier d'habilitation personnel</div>
 </div>
 <hr class="ar">
@@ -1635,6 +1892,9 @@ const Q={
 'q8b':{c:1,ok:"✅ Correct ! Le BA4 doit S'ARRÊTER et ALERTER immédiatement le Chargé des Travaux. Il ne prend aucune initiative en matière de sécurité électrique.",ko:"❌ Incorrect. Le BA4 ne prend JAMAIS d'initiative face à un danger électrique. Il s'arrête et alerte immédiatement le CT.",o:["Résoudre lui-même la situation en appliquant ses connaissances BA4 et les EPI disponibles","S'arrêter immédiatement, quitter la zone si le danger est immédiat, et alerter le CT sans prendre d'initiative","Continuer les travaux en documentant soigneusement le danger pour le rapport de fin de journée","Évacuer seul l'intégralité du bâtiment et couper l'alimentation générale au tableau principal"]},
 'q9a':{c:0,ok:"✅ Correct ! Les gants isolants ont une date de péremption et des tests diélectriques périodiques obligatoires. Inspection visuelle + test gonflage avant chaque usage est non négociable.",ko:"❌ Incorrect. Les gants ont une date de péremption stricte et nécessitent des tests diélectriques réguliers. Inspection visuelle + test gonflage avant chaque usage obligatoire.",o:["Ils doivent être inspectés visuellement (test gonflage) avant chaque usage et ne jamais dépasser leur date de péremption et test diélectrique","Ils peuvent être utilisés indéfiniment si aucune perforation n'est visible à l'œil nu","Un seul modèle universel couvre toutes les tensions de 0V à 36kV","Stockés dans leur boîte d'origine intacte, ils ne nécessitent aucune vérification avant usage"]},
 'q9b':{c:3,ok:"✅ Correct ! Tous les bijoux et éléments métalliques conducteurs doivent être RETIRÉS. Ils peuvent créer des courts-circuits, concentrer l'énergie ou initier des arcs électriques.",ko:"❌ Incorrect. Les bijoux conducteurs DOIVENT être retirés — pas couverts, pas déplacés. Un bracelet ou une bague peut créer un arc et provoquer des brûlures graves.",o:["Les couvrir entièrement avec du ruban isolant épais pour les isoler électriquement","Les regrouper du côté de la main non dominante pour réduire le risque de contact","Vérifier qu'ils ne sont pas en métal conducteur avant de commencer les travaux","Les retirer entièrement : montres, bracelets, bagues, chevalières, chaînes et tout élément métallique"]},
+'qbat1':{c:1,ok:"✅ Correct ! Un engin électrique ne se gare ni ne se charge dans un local technique. On utilise l'emplacement prévu par l'employeur, une prise murale (pas de multiprise), et on ne laisse jamais la charge sans surveillance pendant des heures.",ko:"❌ Incorrect. Local technique, multiprise et charge sans surveillance toute la journée : trois erreurs dans la même situation. Relisez les pages sur la charge et sur les engins électriques.",o:["C'est acceptable si la multiprise a un interrupteur et que la porte du local reste fermée","Non : pas de local technique ni de multiprise ; il utilise l'emplacement prévu par l'employeur, sur une prise murale, sans laisser la charge sans surveillance toute la journée","C'est acceptable, car un local technique est équipé d'une détection incendie","C'est acceptable à condition de débrancher la trottinette avant de quitter le site le soir"]},
+'qbat2':{c:3,ok:"✅ Correct ! On ne touche pas une batterie qui fume : on coupe à distance si possible, on fait sortir les personnes, on ferme la porte et on alerte en précisant « batterie lithium ». La fumée blanche est un mélange de gaz toxiques et inflammables.",ko:"❌ Incorrect. Une batterie qui siffle et fume est en train de s'emballer : la manipuler, l'étouffer ou rester à côté expose à l'embrasement et aux fumées toxiques. Relisez la conduite à tenir.",o:["Le débrancher et l'emporter rapidement dehors pour qu'il brûle à l'extérieur","Le recouvrir d'une couverture ou d'un vêtement pour priver le feu d'air","Ouvrir la fenêtre et rester à côté : sans flammes, ce n'est que de la vapeur","Ne pas y toucher, couper à distance si possible, faire sortir tout le monde, fermer la porte et alerter en précisant « batterie lithium »"]},
+'qbat3':{c:0,ok:"✅ Correct ! Couper l'onduleur ne coupe pas les panneaux : tant qu'il fait jour, les câbles en courant continu restent sous tension (jusqu'à 1 000 V) et débrancher un connecteur peut amorcer un arc. C'est hors des attributions BA4 : on signale, un BA5 intervient avec l'autorisation du CIE.",ko:"❌ Incorrect. Les panneaux produisent tant qu'il y a de la lumière : couper l'onduleur ne met hors tension ni les panneaux ni les câbles en courant continu. Relisez la partie photovoltaïque.",o:["C'est dangereux et interdit au BA4 : panneaux et câbles en courant continu restent sous tension tant qu'il fait jour, et débrancher un connecteur peut provoquer un arc — il faut signaler et laisser intervenir un BA5 autorisé par le CIE","Aucun risque : l'onduleur étant coupé, toute l'installation est hors tension","Aucun risque s'il attend cinq minutes que les condensateurs de l'onduleur se déchargent","Il peut le faire avec des gants isolants, car la tension d'un seul panneau est faible"]},
 'q10a':{c:2,ok:"✅ Correct ! La PREMIÈRE action est PROTÉGER : couper l'alimentation électrique AVANT tout contact avec la victime. Toucher une victime encore sous tension fait du sauveteur une deuxième victime.",ko:"❌ Incorrect. Avant TOUT contact avec la victime : COUPER LE COURANT. C'est la règle absolue. Un sauveteur qui touche une victime encore en contact devient lui-même victime.",o:["Appeler immédiatement le 100 en décrivant la situation avant toute autre action","Saisir la victime par les épaules pour l'éloigner de l'installation en criant au secours","Couper immédiatement l'alimentation électrique avant tout contact avec la victime (P = Protéger)","Commencer la RCP immédiatement pour maximiser les chances de survie de la victime"]},
 'q10b':{c:1,ok:"✅ Correct ! Non, un BA4 n'est PAS autorisé à ouvrir un coffret électrique de sa propre initiative, même avec des EPI. Ouvrir une enveloppe est réservé aux BA5 avec autorisation du CIE.",ko:"❌ Incorrect. Un BA4 ne peut JAMAIS ouvrir une enveloppe de protection de sa propre initiative. Cette action est réservée aux BA5 avec autorisation du CIE. Les EPI ne confèrent pas ce droit.",o:["Oui, car les gants isolants lui confèrent le droit d'accéder aux parties actives BT en toute sécurité","Non, car ouvrir une enveloppe de protection dépasse les attributions BA4 — il doit signaler la panne et appeler un BA5","Oui, uniquement pour les pannes sur installations BT 230V à condition d'être accompagné d'un collègue","Oui, si le circuit a été mis hors tension via l'interrupteur principal de la machine avant l'ouverture"]}
 };
@@ -1674,7 +1934,7 @@ function updPnav(id){
 }
 
 // ── NAVIGATION ──
-// Progression : 40 étapes réelles = 20 lectures de section + 20 quiz réussis.
+// Progression : 46 étapes réelles = 23 lectures de section + 23 quiz réussis.
 // Les Set évitent tout double comptage lors des relectures ou nouvelles tentatives.
 const readDone=new Set(),quizDone=new Set();
 function goTo(id){
@@ -1696,9 +1956,9 @@ function unlockQuiz(qid){
 }
 function updPrg(){
   const n=readDone.size+quizDone.size;
-  const p=Math.min(100,Math.round(n/40*100));
+  const p=Math.min(100,Math.round(n/46*100));
   document.getElementById('pf').style.width=p+'%';
-  document.getElementById('pl').textContent='Progression : '+n+' / 40 étapes ('+p+'%)';
+  document.getElementById('pl').textContent='Progression : '+n+' / 46 étapes ('+p+'%)';
 }
 
 // ── QUIZ ENGINE ──
